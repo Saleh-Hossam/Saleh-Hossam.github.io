@@ -82,7 +82,7 @@ feed_show_tags: true
 
 # Navigation features
 post_search: true
-edit_page_button: true
+edit_page_button: false
 navbar-var-length: false
 
 ######################################
@@ -159,5 +159,3 @@ exclude:
   - docs/
 
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
