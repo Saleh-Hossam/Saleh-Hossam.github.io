@@ -12,7 +12,7 @@ subtitle: Strategic Analysis & Technical Implementation
 <br>
 <div align="center">
   <a href="https://github.com/Saleh-Hossam/Adventure-Works-Business-Intelligence">
-    <img src="https://github.com/Saleh-Hossam/Adventure-Works-Business-Intelligence/blob/main/assets/exec-dashboard.png?raw=true" width="100%" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); margin-bottom: 15px;">
+    <img src="https://github.com/Saleh-Hossam/Adventure-Works-Business-Intelligence/blob/main/assets/exec-dashboard.gif?raw=true" width="100%" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); margin-bottom: 15px;">
   </a>
   <br>
   <a href="https://github.com/Saleh-Hossam/Adventure-Works-Business-Intelligence" class="btn btn-primary">View Dashboard & Analysis</a>
