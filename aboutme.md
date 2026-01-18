@@ -12,7 +12,7 @@ I believe in "Technical Mastery + Human Wisdom." Data is meaningless without the
 ### 🚀 Technical Arsenal
 
 <div align="center">
-  <img src="assets/powerbi.png" width="65" alt="Power BI" style="margin: 15px;" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" width="65" alt="Power BI" style="margin: 15px;" />
   
   <img src="assets/sql.png" width="65" alt="SQL Server" style="margin: 15px;" />
 
