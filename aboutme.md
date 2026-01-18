@@ -11,12 +11,14 @@ I am a **Data Analyst** based in Cairo, Egypt. My mission is to bridge the gap b
 I believe in "Technical Mastery + Human Wisdom." Data is meaningless without the context to interpret it. I don't just run queries; I answer business questions.
 ### 🚀 Technical skills
 
+### 🚀 Technical Arsenal
+
 <div align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" width="65" alt="Power BI" style="margin: 15px;" />
   
-  <img src="assets/sql.png" width="65" alt="SQL Server" style="margin: 15px;" />
+  <img src="https://saleh-hossam.github.io/assets/sql.png" width="65" alt="SQL Server" style="margin: 15px;" />
 
-  <img src="assets/excel.png" width="65" alt="Excel" style="margin: 15px;" />
+  <img src="https://saleh-hossam.github.io/assets/excel.png" width="65" alt="Excel" style="margin: 15px;" />
   
 </div>
 
