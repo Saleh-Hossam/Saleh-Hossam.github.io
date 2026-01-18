@@ -1,16 +1,21 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: About Me
+subtitle: The Bridge Builder
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+### Who I Am
+I am a **Data Analyst** based in Cairo, Egypt. My mission is to bridge the gap between **Business Logic** (Commerce/Accounting) and **Technical Solutions** (SQL/Power BI).
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+### My Core Philosophy
+I believe in "Technical Mastery + Human Wisdom." Data is meaningless without the context to interpret it. I don't just run queries; I answer business questions.
 
-What else do you need?
+### The Toolkit
+* **SQL Server:** Complex Joins, CTEs, Window Functions, Data Cleaning.
+* **Power BI:** DAX, Data Modeling, Star Schema.
+* **Excel:** Power Query, Pivot Tables.
 
-### My story
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+### Contact
+* **Email:** salehhossam611@gmail.com
+* **LinkedIn:** [Connect with me](https://www.linkedin.com/in/saleh-hossam)
+* **Phone:** 01034207458
