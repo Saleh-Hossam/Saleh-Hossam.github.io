@@ -12,11 +12,11 @@ I believe in "Technical Mastery + Human Wisdom." Data is meaningless without the
 ### 🚀 Technical Skills
 
 <div align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" width="60" alt="Power BI" style="margin: 10px;" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" width="65" alt="Power BI" style="margin: 15px;" />
   
-  <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png" width="60" alt="SQL Server" style="margin: 10px;" />
+  <img src="https://upload.wikimedia.org/wikipedia/de/f/f3/Microsoft_SQL_Server_Logo.png" width="65" alt="SQL Server" style="margin: 15px;" />
 
-  <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg" width="60" alt="Excel" style="margin: 10px;" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg" width="65" alt="Excel" style="margin: 15px;" />
   
 </div>
 
