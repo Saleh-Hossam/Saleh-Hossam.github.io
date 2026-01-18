@@ -17,7 +17,7 @@ I believe in "Technical Mastery + Human Wisdom." Data is meaningless without the
   <img src="assets/sql.png" width="65" alt="SQL Server" style="margin: 15px;" />
 
   <img src="assets/excel.png" width="65" alt="Excel" style="margin: 15px;" />
-  
+
 </div>
 
 ### 🧠 Strategic Competencies
