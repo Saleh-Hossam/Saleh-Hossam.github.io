@@ -9,16 +9,15 @@ I am a **Data Analyst** based in Cairo, Egypt. My mission is to bridge the gap b
 
 ### My Core Philosophy
 I believe in "Technical Mastery + Human Wisdom." Data is meaningless without the context to interpret it. I don't just run queries; I answer business questions.
-### 🚀 Technical Arsenal
+### 🚀 Technical Skills
 
 <div align="center">
-  <img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" />
-  <img src="https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white" />
-  <img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white" />
-  <br>
-  <img src="https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white" />
-  <img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" width="60" alt="Power BI" style="margin: 10px;" />
+  
+  <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png" width="60" alt="SQL Server" style="margin: 10px;" />
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg" width="60" alt="Excel" style="margin: 10px;" />
+  
 </div>
 
 ### 🧠 Strategic Competencies
@@ -27,7 +26,7 @@ I believe in "Technical Mastery + Human Wisdom." Data is meaningless without the
 * **Revenue Logic & Profitability Modeling**
 * **Agile/Scrum Workflow**
 
-### Contact
-* **Email:** salehhossam611@gmail.com
-* **LinkedIn:** [Connect with me](https://www.linkedin.com/in/saleh-hossam)
-* **Phone:** 01034207458
+### 📬 Contact
+* <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" width="18" style="vertical-align:middle; margin-right:5px;" /> **Email:** [salehhossam611@gmail.com](mailto:salehhossam611@gmail.com)
+* <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="18" style="vertical-align:middle; margin-right:5px;" /> **LinkedIn:** [Connect with me](https://www.linkedin.com/in/saleh-hossam)
+* <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="18" style="vertical-align:middle; margin-right:5px;" /> **Phone:** +20 103 420 7458
