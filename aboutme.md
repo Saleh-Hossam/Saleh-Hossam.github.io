@@ -9,11 +9,23 @@ I am a **Data Analyst** based in Cairo, Egypt. My mission is to bridge the gap b
 
 ### My Core Philosophy
 I believe in "Technical Mastery + Human Wisdom." Data is meaningless without the context to interpret it. I don't just run queries; I answer business questions.
+### 🚀 Technical Arsenal
 
-### The Toolkit
-* **SQL Server:** Complex Joins, CTEs, Window Functions, Data Cleaning.
-* **Power BI:** DAX, Data Modeling, Star Schema.
-* **Excel:** Power Query, Pivot Tables.
+<div align="center">
+  <img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" />
+  <img src="https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white" />
+  <img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white" />
+  <br>
+  <img src="https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white" />
+  <img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+</div>
+
+### 🧠 Strategic Competencies
+* **Root Cause Analysis (5 Whys)**
+* **KPI Design & Optimization**
+* **Revenue Logic & Profitability Modeling**
+* **Agile/Scrum Workflow**
 
 ### Contact
 * **Email:** salehhossam611@gmail.com
