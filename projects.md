@@ -7,8 +7,10 @@ subtitle: Strategic Analysis & Technical Implementation
 ### 1. 🚲 Adventure Works Intelligence (Power BI)
 **Goal:** Optimize inventory turnover and analyze revenue trends for a global manufacturer.
 * **Tech Stack:** Power BI, DAX, Power Pivot.
-* **Key Insight:** Identified $137k in potential revenue recovery through returns analysis.
+* **Key Insight:** Identified **$202K** in potential revenue recovery by auditing the *Mountain-200* production line.
 * **Status:** 🟡 *Complete*
+<br>
+<div align="center"><a href="https://github.com/Saleh-Hossam/Adventure-Works-Business-Intelligence" class="btn btn-primary">View Dashboard & Analysis</a></div>
 
 ---
 
