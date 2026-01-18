@@ -157,8 +157,8 @@ exclude:
   - README.md
   - screenshot.png
   - docs/
-
-  plugins:
+  
+plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
