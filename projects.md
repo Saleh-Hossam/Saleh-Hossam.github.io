@@ -10,8 +10,13 @@ subtitle: Strategic Analysis & Technical Implementation
 * **Key Insight:** Identified **$202K** in potential revenue recovery by auditing the *Mountain-200* production line.
 * **Status:** 🟡 *Complete*
 <br>
-<div align="center"><a href="https://github.com/Saleh-Hossam/Adventure-Works-Business-Intelligence" class="btn btn-primary">View Dashboard & Analysis</a></div>
-
+<div align="center">
+  <a href="https://github.com/Saleh-Hossam/Adventure-Works-Business-Intelligence">
+    <img src="https://github.com/Saleh-Hossam/Adventure-Works-Business-Intelligence/blob/main/assets/exec-dashboard.png?raw=true" width="100%" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); margin-bottom: 15px;">
+  </a>
+  <br>
+  <a href="https://github.com/Saleh-Hossam/Adventure-Works-Business-Intelligence" class="btn btn-primary">View Dashboard & Analysis</a>
+</div>
 ---
 
 ### 2. 🍜 Danny's Diner (Advanced SQL)
