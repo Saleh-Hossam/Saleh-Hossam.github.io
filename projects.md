@@ -31,11 +31,18 @@ subtitle: Strategic Analysis & Technical Implementation
 </div>
 ---
 
-### 3. 🍜 Danny's Diner (Advanced SQL)
+### 3. 🍜 Danny's Diner (Advanced SQL Engineering)
 **Goal:** Analyze customer spending habits and menu preferences for a restaurant loyalty program.
 * **Tech Stack:** SQL Server (Window Functions, CTEs, Multi-Table Joins).
-* **Key Skills:** Rank analysis, customer retention metrics, and aggregate spending logic.
-* **Status:** 🟢 *Complete*
+* **Key Skill:** Proved technical mastery by engineering rank analysis, customer retention metrics, and aggregate spending logic.
+<br>
+<div align="center">
+  <a href="https://github.com/Saleh-Hossam/Dannys-Diner-SQL">
+    <img src="https://github.com/Saleh-Hossam/Dannys-Diner-SQL/blob/main/assets/Cover.png?raw=true" width="100%" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); margin-bottom: 15px;">
+  </a>
+  <br>
+  <a href="https://github.com/Saleh-Hossam/Dannys-Diner-SQL" class="btn btn-primary">View SQL Code & Logic</a>
+</div>
 
 ---
 
