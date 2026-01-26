@@ -15,7 +15,7 @@ author: Saleh Hossam
 
 # These create the big text on your homepage
 tagline: Data Analyst | Excel & Business Intelligence Specialist
-description: "Bridging Business Strategy & Data Solutions. Transforming raw data into actionable insights that drive decision-making."
+description: Bridging Business Strategy & Data Solutions. Transforming raw data into actionable insights.
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -47,7 +47,7 @@ round-avatar: true
 social-network-links:
   email: "salehhossam611@gmail.com"
   github: Saleh-Hossam
-  linkedin: "saleh-hossam"    # ⚠️ REPLACE WITH YOUR ACTUAL LINKEDIN USERNAME!
+  linkedin: saleh-hossam    # ⚠️ REPLACE WITH YOUR ACTUAL LINKEDIN USERNAME!
   rss: false
   # Optional - add if you have professional accounts:
   # twitter: yourusername
