@@ -1,6 +1,6 @@
 ###########################################################
 ### Welcome to Beautiful Jekyll!
-### Optimized for: Saleh Hossam (The Bridge Builder)
+### Optimized for: Saleh Hossam - Data Analyst Portfolio
 ###########################################################
 
 ############################
@@ -13,9 +13,9 @@ title: Saleh Hossam
 # Your name to show in the footer
 author: Saleh Hossam
 
-# DEX INJECTION: These create the big text on your homepage
-tagline: Strategic Business Analyst | Data & Wisdom
-description: "The Bridge Between Business Logic & Technical Solutions. Transforming raw data into valuation-ready assets."
+# These create the big text on your homepage
+tagline: Data Analyst | Excel & Business Intelligence Specialist
+description: "Bridging Business Strategy & Data Solutions. Transforming raw data into actionable insights that drive decision-making."
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -24,44 +24,43 @@ description: "The Bridge Between Business Logic & Technical Solutions. Transform
 navbar-links:
   About Me: "aboutme"
   Projects: "projects"
+  Skills: "skills"        # ADD THIS - New page to showcase your technical skills
+  Contact: "contact"      # ADD THIS - Make it easy for recruiters to reach you
   # Resources:
-  #   - Beautiful Jekyll: "https://beautifuljekyll.com"
-  #   - Learn markdown: "https://www.markdowntutorial.com/"
+  #   - Resume/CV: "/assets/files/resume.pdf"  # FUTURE: Add your resume here
 
 ################
 # --- Logo --- #
 ################
 
 # Image to show in the navigation bar
-# ACTION ITEM: Upload a square photo to /assets/img/ and name it 'avatar.png' later.
-avatar: "/assets/img/avatar-icon.jpg"
+# ACTION ITEM: Replace with your professional headshot
+# Recommended: 200x200px square image, professional background
+avatar: "/assets/img/avatar-icon.jpg"  # CHANGE TO: "/assets/img/saleh-avatar.jpg"
 round-avatar: true
 
 #####################################
 # --- Footer social media links --- #
 #####################################
 
-# DEX RULE: Only Professional Channels. No Noise.
+# CRITICAL: Update these with your real links!
 social-network-links:
   email: "salehhossam611@gmail.com"
   github: Saleh-Hossam
-  linkedin: "your-linkedin-username" # <--- UPDATE THIS LATER
+  linkedin: "saleh-hossam"    # ⚠️ REPLACE WITH YOUR ACTUAL LINKEDIN USERNAME!
   rss: false
+  # Optional - add if you have professional accounts:
+  # twitter: yourusername
+  # youtube: "@yourchannel"      # If you have tutorial videos
 
-  # Bloat removed (Uncomment if strictly necessary)
-  # facebook: deanattali
-  # twitter: daattali
-  # patreon: DeanAttali
-  # youtube: "@daattali"
-  # whatsapp: 15551212
-
-rss-description: Strategic Data Analysis Updates
+# RSS feed description (for blog subscribers)
+rss-description: "Data Analysis Insights & Project Updates from Saleh Hossam"
 
 ###########################
 # --- General options --- #
 ###########################
 
-# Social sharing buttons on posts
+# Social sharing buttons on posts (keep these for visibility)
 share-links-active:
   twitter: true
   facebook: true
@@ -69,62 +68,83 @@ share-links-active:
   vk: false
   reddit: false
 
-# Footer link
+# Footer link - shows your site URL
 url-pretty: "Saleh-Hossam.github.io"
 
-# Browser tab title
+# Browser tab title - appears on every page
 title-on-all-pages: true
 
-# Excerpt settings for blog feed
+# Excerpt settings for blog feed (how much preview text to show)
 excerpt_length: 50
 feed_show_excerpt: true
 feed_show_tags: true
 
 # Navigation features
-post_search: true
-edit_page_button: false
-navbar-var-length: false
+post_search: true          # Allow visitors to search your site
+edit_page_button: false    # Keep false for professional look
+navbar-var-length: false   # Keep navbar consistent size
 
 ######################################
-# --- Colours / background image --- #
+# --- Colors / Background Settings --- #
 ######################################
 
-# Professional, Clean Palette (White/Grey/Blue)
-page-col: "#FFFFFF"
-text-col: "#404040"
-link-col: "#008AFF"
-hover-col: "#0085A1"
-navbar-col: "#EAEAEA"
-navbar-text-col: "#404040"
-navbar-border-col: "#DDDDDD"
-footer-col: "#EAEAEA"
-footer-text-col: "#777777"
-footer-link-col: "#404040"
-footer-hover-col: "#0085A1"
+# IMPROVED: Professional color scheme for data analyst portfolio
+# Clean, modern, trustworthy
+
+page-col: "#FFFFFF"              # White background - clean & professional
+text-col: "#2C3E50"              # Dark blue-gray - easier to read than pure black
+link-col: "#3498DB"              # Professional blue - stands out without being loud
+hover-col: "#2980B9"             # Darker blue on hover
+navbar-col: "#F8F9FA"            # Light gray navbar - subtle separation
+navbar-text-col: "#2C3E50"       # Dark text on light navbar
+navbar-border-col: "#E0E0E0"     # Subtle border
+footer-col: "#34495E"            # Dark blue-gray footer - professional
+footer-text-col: "#ECF0F1"       # Light text on dark footer
+footer-link-col: "#3498DB"       # Blue links in footer
+footer-hover-col: "#5DADE2"      # Lighter blue on hover
+
+# OPTIONAL: Add a subtle background image to homepage
+# Uncomment and customize if you want:
+# page-img: "/assets/img/data-bg.jpg"  # Subtle data visualization background
 
 #################################
 # --- Web Analytics Section --- #
 #################################
-# Add Google Analytics later if you want to track visitors
-#gtag: "G-XXXXXXXXXX"
+
+# ADD GOOGLE ANALYTICS (Recommended for tracking portfolio views)
+# Get your tracking ID from: https://analytics.google.com
+# Uncomment when ready:
+# gtag: "G-XXXXXXXXXX"  # ⚠️ REPLACE with your Google Analytics ID
 
 ####################
 # --- Comments --- #
 ####################
-# Disabled for now to keep it clean.
-#disqus: ""
+
+# Keep disabled for portfolio (enable if you start blogging)
+# disqus: ""
+
+####################
+# --- SEO & Meta --- #
+####################
+
+# ADD THESE for better Google search results:
+keywords: "data analyst, excel, power query, power pivot, dax, business intelligence, portfolio, Saleh Hossam"
+
+# Open Graph settings (for social media sharing)
+og-img: "/assets/img/portfolio-preview.jpg"  # ADD THIS: 1200x630px image for social shares
 
 ################
 # --- Misc --- #
 ################
 
+# Date format (how dates appear on blog posts)
 date_format: "%B %-d, %Y"
 
 #################################################################################
-# --- You don't need to touch anything below here --- #
+# --- Technical Settings (Don't modify unless you know what you're doing) --- #
 #################################################################################
 
-timezone: "Africa/Cairo" # Updated to your timezone
+timezone: "Africa/Cairo"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
@@ -133,6 +153,7 @@ paginate: 5
 kramdown:
   input: GFM
 
+# Default settings for all pages and posts
 defaults:
   -
     scope:
@@ -140,14 +161,16 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      comments: true
+      comments: false        # Changed to false for portfolio
       social-share: true
   -
     scope:
       path: ""
     values:
       layout: "page"
+      show-avatar: true      # Show your photo on all pages
 
+# Files to exclude from the site build
 exclude:
   - CHANGELOG.md
   - CNAME
@@ -157,8 +180,19 @@ exclude:
   - README.md
   - screenshot.png
   - docs/
+  - vendor/
+  - .bundle/
   
+# Jekyll plugins
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-feed          # ADD THIS: Creates RSS feed automatically
+  - jekyll-seo-tag       # ADD THIS: Improves SEO
 
+# Custom collections (for organizing projects better)
+# OPTIONAL - Use if you have many projects:
+# collections:
+#   projects:
+#     output: true
+#     permalink: /projects/:name/
