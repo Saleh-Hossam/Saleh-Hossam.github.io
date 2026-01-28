@@ -3,6 +3,7 @@ layout: page
 title: Projects
 subtitle: Strategic Analysis & Technical Implementation
 ---
+
 ### 1. 🚲 Adventure Works Intelligence (Power BI)
 **Goal:** Optimize inventory turnover and analyze revenue trends for a global manufacturer.
 * **Tech Stack:** Power BI, DAX, Power Pivot.
@@ -17,6 +18,7 @@ subtitle: Strategic Analysis & Technical Implementation
 </div>
 
 ---
+
 ### 2. 📦 Supply Chain "The Hidden Loss" (Strategic Analytics)
 **Goal:** Invalidate the stakeholder hypothesis ("Late Deliveries are killing us") and identify the true financial drain to save capital.
 * **Tech Stack:** SQL Server (Multi-Dimensional Aggregation), Power BI (Interactive Root-Cause Dashboard).
@@ -29,6 +31,7 @@ subtitle: Strategic Analysis & Technical Implementation
   <br>
   <a href="https://github.com/Saleh-Hossam/Supply-Chain-Root-Cause" class="btn btn-primary">View Code & "Golden README"</a>
 </div>
+
 ---
 
 ### 3. 🍜 Danny's Diner (Advanced SQL Engineering)
