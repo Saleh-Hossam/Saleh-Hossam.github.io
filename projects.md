@@ -46,7 +46,7 @@ subtitle: Strategic Analysis & Technical Implementation
 
 ---
 
-### 4. 🚀 Strategic Sales & RFM Intelligence (Excel V2.0)
+### 4. 🚀 Strategic Sales & RFM Intelligence (Excel)
 **Goal:** Transform raw sales data into a strategic decision engine for Executive, Operations, and Marketing stakeholders.
 * **Tech Stack:** Excel (Star Schema Data Model), Power Pivot (DAX), Power Query.
 * **Key Insight:** Engineered a **Customer Retention System** to detect high-value churn risks and applied **Diverging Logic** to isolate "Profit Leaks" in logistics.
