@@ -46,13 +46,15 @@ subtitle: Strategic Analysis & Technical Implementation
 
 ---
 
-### 4. 📡 Telecom Customer Churn Analysis (Excel)
-**Goal:** Identify high-risk customers and visualize churn patterns.
-* **Tech Stack:** Excel (Pivot Tables, Advanced Formulas, Dashboarding).
-* **Key Insight:** Built an interactive dashboard to visualize customer demographics and attrition triggers.
-* **Status:** 🟢 *Complete*
-
+### 4. 🚀 Strategic Sales & RFM Intelligence (Excel V2.0)
+**Goal:** Transform raw sales data into a strategic decision engine for Executive, Operations, and Marketing stakeholders.
+* **Tech Stack:** Excel (Star Schema Data Model), Power Pivot (DAX), Power Query.
+* **Key Insight:** Engineered a **Customer Retention System** to detect high-value churn risks and applied **Diverging Logic** to isolate "Profit Leaks" in logistics.
 <br>
 <div align="center">
-  <a href="https://github.com/Saleh-Hossam" class="btn btn-primary">View Code on GitHub</a>
+  <a href="https://github.com/Saleh-Hossam/Strategic-Sales-RFM-Dashboard">
+    <img src="https://github.com/Saleh-Hossam/Strategic-Sales-RFM-Dashboard/blob/main/assets/Overview.gif?raw=true" width="100%" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); margin-bottom: 15px;">
+  </a>
+  <br>
+  <a href="https://github.com/Saleh-Hossam/Strategic-Sales-RFM-Dashboard" class="btn btn-primary">View Strategy & Dashboards</a>
 </div>
