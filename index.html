@@ -84,18 +84,23 @@
         
         <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[minmax(140px,auto)]">
             
-            <div class="tile rounded-2xl p-8 md:col-span-2 md:row-span-2 data-viz-bg grid-pattern relative overflow-hidden">
-                <div class="relative z-10 h-full flex flex-col justify-between gap-8">
-                    <div class="flex flex-col md:flex-row items-start md:items-center gap-8">
+            <div class="tile rounded-2xl p-8 md:col-span-2 md:row-span-2 data-viz-bg grid-pattern relative overflow-hidden flex flex-col justify-between">
+                <div class="relative z-10 flex flex-col gap-6 md:gap-8">
+                    <div class="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-8">
                         <img 
                             src="assets/img/profile.jpg" 
                             alt="Saleh Hossam" 
-                            class="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-[#D4AF37]/50 object-cover shadow-2xl shadow-gold/20"
+                            class="w-32 h-32 md:w-36 md:h-36 rounded-full border-4 border-[#D4AF37]/50 object-cover shadow-2xl shadow-gold/20 shrink-0"
                             onerror="this.style.display='none'"
                         >
-                        <div>
-                            <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-2">Saleh Hossam<span class="text-gold">.</span></h1>
-                            <p class="text-slate-blue text-lg font-medium">Strategic Business Analyst | DEBI Track</p>
+                        <div class="flex flex-col">
+                            <h1 class="text-3xl md:text-5xl font-bold tracking-tight mb-2 whitespace-nowrap">Saleh Hossam<span class="text-gold">.</span></h1>
+                            <p class="text-slate-blue text-lg font-medium">Strategic Business Analyst</p>
+                            
+                            <a href="assets/Saleh_Hossam_Data_Analyst.pdf" target="_blank" class="inline-flex items-center gap-2 text-gold text-sm font-medium mt-3 border-b border-transparent hover:border-gold w-fit transition-all">
+                             <i data-lucide="download" class="w-4 h-4"></i>
+                              <span>Download CV</span>
+                                </a>
                         </div>
                     </div>
                     
@@ -141,34 +146,32 @@
                 </div>
             </a>
             
-            <a href="https://github.com/Saleh-Hossam/Dannys-Diner-SQL" target="_blank" class="tile rounded-2xl p-6 flex flex-col justify-between group cursor-pointer text-left block hover:no-underline">
-                 <div class="flex items-start justify-between mb-3">
-                    <span class="text-xs text-slate-blue font-medium uppercase tracking-wider group-hover:text-white transition-colors">Danny's Diner</span>
-                    <i data-lucide="database-zap" class="w-5 h-5 text-gold/70 group-hover:text-gold transition-colors"></i>
+            <a href="https://github.com/Saleh-Hossam/Dannys-Diner-SQL" target="_blank" class="tile rounded-2xl p-6 md:col-span-1 lg:col-span-2 flex flex-col justify-between group cursor-pointer text-left block hover:no-underline">
+                 <div class="flex items-start justify-between mb-4">
+                    <span class="text-xs text-slate-blue font-medium uppercase tracking-wider group-hover:text-white transition-colors">Danny's Diner · SQL</span>
+                    <i data-lucide="utensils-crossed" class="w-5 h-5 text-gold/70 group-hover:text-gold transition-colors"></i>
                 </div>
                 <div>
-                     <div class="flex items-center gap-2 mb-2">
-                        <i data-lucide="code-2" class="w-4 h-4 text-gold"></i>
-                        <p class="text-lg font-bold text-white">Advanced SQL</p>
-                     </div>
-                    <p class="text-white/50 text-xs group-hover:text-white/80 transition-colors">Customer Behavior & Retention Metrics using complex queries.</p>
+                    <p class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-1">Retention Metrics</p>
+                    <p class="text-white/50 text-sm group-hover:text-white/80 transition-colors">Customer Behavior Patterns</p>
+                    <p class="text-white/30 text-xs mt-2 group-hover:text-white/50">Window Functions & Rank Analysis</p>
                 </div>
             </a>
             
-            <div class="tile rounded-2xl p-6">
+            <div class="tile rounded-2xl p-6 md:col-span-1 lg:col-span-2">
                 <p class="text-xs text-slate-blue font-medium uppercase tracking-wider mb-4">The Arsenal</p>
-                <div class="grid grid-cols-3 gap-4">
+                <div class="grid grid-cols-3 gap-4 h-full items-center">
                     <div class="tech-icon flex flex-col items-center gap-2 text-white/60">
-                        <i data-lucide="bar-chart-2" class="w-6 h-6"></i>
-                        <span class="text-[10px]">Power BI</span>
+                        <i data-lucide="bar-chart-2" class="w-8 h-8"></i>
+                        <span class="text-xs">Power BI</span>
                     </div>
                     <div class="tech-icon flex flex-col items-center gap-2 text-white/60">
-                        <i data-lucide="database" class="w-6 h-6"></i>
-                        <span class="text-[10px]">SQL Server</span>
+                        <i data-lucide="database" class="w-8 h-8"></i>
+                        <span class="text-xs">SQL Server</span>
                     </div>
                     <div class="tech-icon flex flex-col items-center gap-2 text-white/60">
-                        <i data-lucide="table" class="w-6 h-6"></i>
-                        <span class="text-[10px]">Excel</span>
+                        <i data-lucide="table" class="w-8 h-8"></i>
+                        <span class="text-xs">Excel</span>
                     </div>
                 </div>
             </div>
@@ -200,13 +203,21 @@
         </div>
 
         <footer class="mt-8 flex flex-wrap items-center justify-center gap-4">
+             <a href="tel:+201000000000" class="tile rounded-lg px-5 py-2.5 flex items-center gap-2 text-white/60 hover:text-gold text-sm hover:no-underline">
+                <i data-lucide="phone" class="w-4 h-4"></i>
+                <span>Call Me</span>
+            </a>
             <a href="https://linkedin.com/in/saleh-hossam" target="_blank" class="tile rounded-lg px-5 py-2.5 flex items-center gap-2 text-white/60 hover:text-gold text-sm hover:no-underline">
                 <i data-lucide="linkedin" class="w-4 h-4"></i>
                 <span>LinkedIn</span>
             </a>
+            <a href="https://github.com/Saleh-Hossam" target="_blank" class="tile rounded-lg px-5 py-2.5 flex items-center gap-2 text-white/60 hover:text-gold text-sm hover:no-underline">
+                <i data-lucide="github" class="w-4 h-4"></i>
+                <span>GitHub</span>
+            </a>
             <a href="mailto:saleh.hossam@example.com" class="tile rounded-lg px-5 py-2.5 flex items-center gap-2 text-white/60 hover:text-gold text-sm hover:no-underline">
                 <i data-lucide="mail" class="w-4 h-4"></i>
-                <span>Contact</span>
+                <span>Email</span>
             </a>
         </footer>
         
