@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saleh Hossam | Strategic Business Analyst</title>
+    <title>Saleh Hossam | Data Analyst</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -121,6 +121,17 @@
             border-radius: 12px;
             padding: 1.5rem;
         }
+
+        .cert-card {
+            background: linear-gradient(135deg, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.01) 100%);
+            border: 1px solid rgba(255,255,255,0.08);
+            transition: all 0.3s ease;
+        }
+
+        .cert-card:hover {
+            border-color: rgba(212, 175, 55, 0.3);
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.05) 0%, rgba(212, 175, 55, 0.02) 100%);
+        }
     </style>
 </head>
 <body class="min-h-screen text-white antialiased selection:bg-gold selection:text-black">
@@ -132,23 +143,23 @@
                 <img 
                     src="assets/img/profile.jpg" 
                     alt="Saleh Hossam" 
-                    class="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-[#D4AF37]/50 object-cover shadow-2xl shadow-gold/20 shrink-0"
+                    class="w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-[#D4AF37]/50 object-cover shadow-2xl shadow-gold/20 shrink-0"
                     onerror="this.style.display='none'"
                 >
                 <div class="flex flex-col flex-1">
                     <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-2">Saleh Hossam<span class="text-gold">.</span></h1>
-                    <p class="text-slate-blue text-xl md:text-2xl font-medium mb-4">Strategic Business Analyst</p>
+                    <p class="text-slate-blue text-xl md:text-2xl font-medium mb-4">Data Analyst</p>
                     
                     <p class="text-white/70 text-base md:text-lg max-w-2xl leading-relaxed mb-6">
-                        Bridging the gap between <strong class="text-white">Technical Mastery</strong> and <strong class="text-white">Human Wisdom</strong> to solve business complexity.
+                        Transforming data into actionable insights through Power BI, SQL, and Excel. Passionate about solving business problems with analytics.
                     </p>
                     
                     <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
                         <div class="flex items-center gap-2 text-gold text-xs font-mono uppercase tracking-widest">
                             <i data-lucide="activity" class="w-3 h-3"></i>
-                            <span>High-Signal Analysis</span>
+                            <span>Portfolio Projects</span>
                         </div>
-                        <a href="#" class="inline-flex items-center gap-2 text-gold text-sm font-medium border-b border-transparent hover:border-gold transition-all">
+                        <a href="https://github.com/Saleh-Hossam/Saleh-Hossam.github.io/raw/master/assets/Saleh_Hossam_Data_Analyst.pdf.pdf" target="_blank" class="inline-flex items-center gap-2 text-gold text-sm font-medium border-b border-transparent hover:border-gold transition-all">
                             <i data-lucide="download" class="w-4 h-4"></i>
                             <span>Download CV</span>
                         </a>
@@ -166,8 +177,8 @@
 
         <!-- Projects Title -->
         <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-2">Portfolio Showcase</h2>
-            <p class="text-slate-400 text-lg">Strategic Analysis & Technical Implementation</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-2">Portfolio Projects</h2>
+            <p class="text-slate-400 text-lg">Practical applications of data analysis skills</p>
         </div>
 
         <!-- Projects Section -->
@@ -177,10 +188,6 @@
             <div class="project-card rounded-2xl p-8 md:p-10">
                 <div class="flex items-start justify-between mb-6">
                     <div>
-                        <div class="flex items-center gap-2 mb-3">
-                            <i data-lucide="star" class="w-5 h-5 text-gold fill-gold"></i>
-                            <span class="text-xs text-gold font-bold uppercase tracking-wider">Featured Case Study</span>
-                        </div>
                         <h3 class="text-3xl md:text-4xl font-bold mb-3 text-white flex items-center gap-3">
                             <span class="text-2xl">🚀</span>
                             Strategic Sales & RFM Intelligence
@@ -200,22 +207,22 @@
                 <!-- Goal & Description -->
                 <div class="mb-6">
                     <p class="text-white/90 text-base md:text-lg font-semibold mb-3">
-                        <span class="text-gold">Goal:</span> Transform raw sales data into a strategic decision engine for Executive, Operations, and Marketing stakeholders.
+                        <span class="text-gold">Project Goal:</span> Transform raw sales data into an interactive dashboard for data-driven decision making.
                     </p>
                     <p class="text-slate-400 text-base leading-relaxed">
-                        Engineered a comprehensive <strong class="text-white">Customer Retention System</strong> to detect high-value churn risks and applied <strong class="text-white">Diverging Logic</strong> to isolate "Profit Leaks" in logistics. This dashboard transforms raw data into boardroom decisions through advanced DAX and data modeling.
+                        Built a comprehensive customer retention analysis system using Excel's advanced features. Implemented RFM (Recency, Frequency, Monetary) segmentation to identify customer behavior patterns and created diverging logic to highlight profit opportunities and risks in logistics operations.
                     </p>
                 </div>
 
                 <!-- Key Insights -->
                 <div class="grid md:grid-cols-2 gap-4 mb-6">
                     <div class="metric-box">
-                        <p class="text-xs text-gold font-bold uppercase tracking-wider mb-2">Key Achievement</p>
-                        <p class="text-white text-sm leading-relaxed">Customer Retention System detecting high-value churn risks</p>
+                        <p class="text-xs text-gold font-bold uppercase tracking-wider mb-2">Key Learning</p>
+                        <p class="text-white text-sm leading-relaxed">Designed star schema data model with advanced DAX measures</p>
                     </div>
                     <div class="metric-box">
-                        <p class="text-xs text-gold font-bold uppercase tracking-wider mb-2">Technical Innovation</p>
-                        <p class="text-white text-sm leading-relaxed">Diverging Logic to isolate profit leaks in logistics</p>
+                        <p class="text-xs text-gold font-bold uppercase tracking-wider mb-2">Skills Demonstrated</p>
+                        <p class="text-white text-sm leading-relaxed">Customer segmentation, retention analytics, profit analysis</p>
                     </div>
                 </div>
 
@@ -232,7 +239,7 @@
 
                 <!-- View Project Button -->
                 <a href="https://github.com/Saleh-Hossam/Strategic-Sales-RFM-Dashboard" target="_blank" class="btn-gold rounded-xl px-8 py-4 text-gold font-bold text-sm flex items-center justify-center gap-2 w-full hover:text-white">
-                    <span>View Strategy & Dashboards</span>
+                    <span>View Project on GitHub</span>
                     <i data-lucide="arrow-right" class="w-4 h-4"></i>
                 </a>
             </div>
@@ -258,18 +265,18 @@
                 <!-- Goal & Description -->
                 <div class="mb-6">
                     <p class="text-white/90 text-base md:text-lg font-semibold mb-3">
-                        <span class="text-gold">Goal:</span> Optimize inventory turnover and analyze revenue trends for a global manufacturer.
+                        <span class="text-gold">Project Goal:</span> Analyze inventory and revenue trends for a fictional manufacturing company.
                     </p>
                     <p class="text-slate-400 text-base leading-relaxed">
-                        Comprehensive business intelligence analysis uncovering revenue leakage and optimization opportunities across sales channels. Through detailed product line auditing and KPI analysis, identified critical areas for revenue recovery.
+                        Created an interactive Power BI dashboard to track product performance, inventory turnover, and revenue patterns. Through detailed analysis of the product catalog, identified potential revenue recovery opportunities totaling $202K in the Mountain-200 product line.
                     </p>
                 </div>
 
                 <!-- Key Metric Highlight -->
                 <div class="metric-box mb-6">
-                    <p class="text-xs text-gold font-bold uppercase tracking-wider mb-2">Key Insight</p>
+                    <p class="text-xs text-gold font-bold uppercase tracking-wider mb-2">Analysis Finding</p>
                     <p class="text-5xl md:text-6xl font-bold text-gold mb-2">$202K</p>
-                    <p class="text-white text-base">Potential revenue recovery identified by auditing the <strong>Mountain-200</strong> production line</p>
+                    <p class="text-white text-base">Potential revenue recovery identified through product line audit and KPI analysis</p>
                 </div>
 
                 <!-- Project Image/GIF -->
@@ -285,7 +292,7 @@
 
                 <!-- View Project Button -->
                 <a href="https://github.com/Saleh-Hossam/Adventure-Works-Business-Intelligence" target="_blank" class="btn-gold rounded-xl px-8 py-4 text-gold font-bold text-sm flex items-center justify-center gap-2 w-full hover:text-white">
-                    <span>View Dashboard & Analysis</span>
+                    <span>View Project on GitHub</span>
                     <i data-lucide="arrow-right" class="w-4 h-4"></i>
                 </a>
             </div>
@@ -296,7 +303,7 @@
                     <div class="flex-1">
                         <h3 class="text-3xl md:text-4xl font-bold mb-3 text-white flex items-center gap-3">
                             <span class="text-2xl">📦</span>
-                            Supply Chain "The Hidden Loss"
+                            Supply Chain Analysis
                         </h3>
                     </div>
                 </div>
@@ -305,31 +312,30 @@
                 <div class="flex flex-wrap gap-2 mb-6">
                     <span class="tech-badge">SQL Server</span>
                     <span class="tech-badge">Power BI</span>
-                    <span class="tech-badge">Multi-Dimensional Aggregation</span>
-                    <span class="tech-badge">Root-Cause Analysis</span>
+                    <span class="tech-badge">Data Analysis</span>
                 </div>
 
                 <!-- Goal & Description -->
                 <div class="mb-6">
                     <p class="text-white/90 text-base md:text-lg font-semibold mb-3">
-                        <span class="text-gold">Goal:</span> Invalidate the stakeholder hypothesis ("Late Deliveries are killing us") and identify the true financial drain to save capital.
+                        <span class="text-gold">Project Goal:</span> Investigate root causes of inventory discrepancies in a supply chain dataset.
                     </p>
                     <p class="text-slate-400 text-base leading-relaxed">
-                        Deep-dive strategic analysis that challenged conventional assumptions to uncover the real root cause of financial losses. Used multi-dimensional aggregation and interactive dashboards to prove stakeholder hypotheses wrong and redirect resources effectively.
+                        Used SQL for multi-dimensional data aggregation and Power BI for interactive visualization. Analyzed the hypothesis that late deliveries were the primary issue, but discovered that inventory loss (5% of orders) was actually responsible for 32,000+ units in discrepancies, while late orders (20%) were a consistent baseline.
                     </p>
                 </div>
 
                 <!-- Key Metrics -->
                 <div class="grid md:grid-cols-2 gap-4 mb-6">
                     <div class="metric-box">
-                        <p class="text-xs text-gold font-bold uppercase tracking-wider mb-2">Hypothesis Invalidated</p>
+                        <p class="text-xs text-gold font-bold uppercase tracking-wider mb-2">Initial Hypothesis</p>
                         <p class="text-3xl font-bold text-white mb-1">20%</p>
-                        <p class="text-white/70 text-sm">Late Orders were a <strong>systemic constant</strong>, not the problem</p>
+                        <p class="text-white/70 text-sm">Late orders found to be a <strong>consistent baseline</strong></p>
                     </div>
                     <div class="metric-box">
-                        <p class="text-xs text-gold font-bold uppercase tracking-wider mb-2">True Root Cause Found</p>
+                        <p class="text-xs text-gold font-bold uppercase tracking-wider mb-2">Actual Root Cause</p>
                         <p class="text-3xl font-bold text-gold mb-1">32,000+ Units</p>
-                        <p class="text-white/70 text-sm">Inventory Loss (5%) was the <strong>hidden financial bleed</strong></p>
+                        <p class="text-white/70 text-sm">Inventory loss identified as the <strong>true problem</strong></p>
                     </div>
                 </div>
 
@@ -346,7 +352,7 @@
 
                 <!-- View Project Button -->
                 <a href="https://github.com/Saleh-Hossam/Supply-Chain-Root-Cause" target="_blank" class="btn-gold rounded-xl px-8 py-4 text-gold font-bold text-sm flex items-center justify-center gap-2 w-full hover:text-white">
-                    <span>View Code & "Golden README"</span>
+                    <span>View Project on GitHub</span>
                     <i data-lucide="arrow-right" class="w-4 h-4"></i>
                 </a>
             </div>
@@ -357,7 +363,7 @@
                     <div class="flex-1">
                         <h3 class="text-3xl md:text-4xl font-bold mb-3 text-white flex items-center gap-3">
                             <span class="text-2xl">🍜</span>
-                            Danny's Diner
+                            Danny's Diner SQL Analysis
                         </h3>
                     </div>
                 </div>
@@ -367,31 +373,31 @@
                     <span class="tech-badge">SQL Server</span>
                     <span class="tech-badge">Window Functions</span>
                     <span class="tech-badge">CTEs</span>
-                    <span class="tech-badge">Multi-Table Joins</span>
+                    <span class="tech-badge">Joins</span>
                 </div>
 
                 <!-- Goal & Description -->
                 <div class="mb-6">
                     <p class="text-white/90 text-base md:text-lg font-semibold mb-3">
-                        <span class="text-gold">Goal:</span> Analyze customer spending habits and menu preferences for a restaurant loyalty program.
+                        <span class="text-gold">Project Goal:</span> Analyze customer behavior patterns for a restaurant loyalty program using SQL.
                     </p>
                     <p class="text-slate-400 text-base leading-relaxed">
-                        Advanced SQL engineering project demonstrating technical mastery through complex query construction. Leveraged window functions, rank analysis, and aggregate spending logic to decode customer retention patterns and identify high-value segments for targeted loyalty programs.
+                        Practiced advanced SQL techniques to analyze customer spending habits and menu preferences. Implemented window functions for ranking analysis, CTEs for complex queries, and multi-table joins to calculate retention metrics and aggregate spending patterns by customer segment.
                     </p>
                 </div>
 
                 <!-- Key Skills -->
                 <div class="grid md:grid-cols-3 gap-4 mb-6">
                     <div class="metric-box">
-                        <p class="text-xs text-gold font-bold uppercase tracking-wider mb-2">Technical Skill</p>
-                        <p class="text-white text-sm">Rank Analysis & Window Functions</p>
+                        <p class="text-xs text-gold font-bold uppercase tracking-wider mb-2">SQL Techniques</p>
+                        <p class="text-white text-sm">Window Functions & Ranking</p>
+                    </div>
+                    <div class="metric-box">
+                        <p class="text-xs text-gold font-bold uppercase tracking-wider mb-2">Analysis Focus</p>
+                        <p class="text-white text-sm">Customer Retention Patterns</p>
                     </div>
                     <div class="metric-box">
                         <p class="text-xs text-gold font-bold uppercase tracking-wider mb-2">Methodology</p>
-                        <p class="text-white text-sm">Customer Retention Metrics</p>
-                    </div>
-                    <div class="metric-box">
-                        <p class="text-xs text-gold font-bold uppercase tracking-wider mb-2">Output</p>
                         <p class="text-white text-sm">Aggregate Spending Logic</p>
                     </div>
                 </div>
@@ -409,19 +415,105 @@
 
                 <!-- View Project Button -->
                 <a href="https://github.com/Saleh-Hossam/Dannys-Diner-SQL" target="_blank" class="btn-gold rounded-xl px-8 py-4 text-gold font-bold text-sm flex items-center justify-center gap-2 w-full hover:text-white">
-                    <span>View SQL Code & Logic</span>
+                    <span>View Project on GitHub</span>
                     <i data-lucide="arrow-right" class="w-4 h-4"></i>
                 </a>
             </div>
 
         </div>
 
-        <!-- The Arsenal Section -->
-        <div class="tile rounded-2xl p-8 md:p-12 mt-16 mb-12">
+        <!-- Certifications Section -->
+        <div class="mt-16 mb-12">
             <div class="text-center mb-10">
-                <p class="text-xs text-gold font-bold uppercase tracking-widest mb-2">The Arsenal</p>
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-2">Technical Stack</h2>
-                <p class="text-slate-400">Tools & Technologies for Strategic Analysis</p>
+                <p class="text-xs text-gold font-bold uppercase tracking-widest mb-2">Professional Development</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-2">Certifications</h2>
+                <p class="text-slate-400">Continuous learning in data analysis and business intelligence</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-4">
+                <!-- Certificate 1 -->
+                <a href="https://www.coursera.org/account/accomplishments/verify/QXNA559ST2EE" target="_blank" class="cert-card rounded-xl p-6 block hover:no-underline">
+                    <div class="flex items-start justify-between mb-3">
+                        <div class="flex-1">
+                            <h4 class="text-lg font-bold text-white mb-1">Power Pivot Fundamentals</h4>
+                            <p class="text-sm text-slate-400">Corporate Finance Institute</p>
+                        </div>
+                        <i data-lucide="external-link" class="w-4 h-4 text-gold shrink-0 ml-2"></i>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <p class="text-xs text-white/50">Jan 2026</p>
+                        <span class="text-xs text-gold font-semibold">Verify →</span>
+                    </div>
+                </a>
+
+                <!-- Certificate 2 -->
+                <a href="https://www.coursera.org/account/accomplishments/verify/HDSYVJWK68H6" target="_blank" class="cert-card rounded-xl p-6 block hover:no-underline">
+                    <div class="flex items-start justify-between mb-3">
+                        <div class="flex-1">
+                            <h4 class="text-lg font-bold text-white mb-1">Power Query Fundamentals</h4>
+                            <p class="text-sm text-slate-400">Corporate Finance Institute</p>
+                        </div>
+                        <i data-lucide="external-link" class="w-4 h-4 text-gold shrink-0 ml-2"></i>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <p class="text-xs text-white/50">Jan 2026</p>
+                        <span class="text-xs text-gold font-semibold">Verify →</span>
+                    </div>
+                </a>
+
+                <!-- Certificate 3 -->
+                <a href="https://www.coursera.org/account/accomplishments/verify/NWAC9GHU59HU" target="_blank" class="cert-card rounded-xl p-6 block hover:no-underline">
+                    <div class="flex items-start justify-between mb-3">
+                        <div class="flex-1">
+                            <h4 class="text-lg font-bold text-white mb-1">Introduction to Databases</h4>
+                            <p class="text-sm text-slate-400">Meta</p>
+                        </div>
+                        <i data-lucide="external-link" class="w-4 h-4 text-gold shrink-0 ml-2"></i>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <p class="text-xs text-white/50">Jan 2026</p>
+                        <span class="text-xs text-gold font-semibold">Verify →</span>
+                    </div>
+                </a>
+
+                <!-- Certificate 4 -->
+                <a href="https://www.coursera.org/account/accomplishments/verify/J779XYZWERFM" target="_blank" class="cert-card rounded-xl p-6 block hover:no-underline">
+                    <div class="flex items-start justify-between mb-3">
+                        <div class="flex-1">
+                            <h4 class="text-lg font-bold text-white mb-1">Statistical Distributions & Business Decisions</h4>
+                            <p class="text-sm text-slate-400">Rice University</p>
+                        </div>
+                        <i data-lucide="external-link" class="w-4 h-4 text-gold shrink-0 ml-2"></i>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <p class="text-xs text-white/50">Dec 2025</p>
+                        <span class="text-xs text-gold font-semibold">Verify →</span>
+                    </div>
+                </a>
+
+                <!-- Certificate 5 -->
+                <a href="https://www.coursera.org/account/accomplishments/verify/RVWL2Z49MBTL" target="_blank" class="cert-card rounded-xl p-6 block hover:no-underline">
+                    <div class="flex items-start justify-between mb-3">
+                        <div class="flex-1">
+                            <h4 class="text-lg font-bold text-white mb-1">Fundamentals of Data Analysis in Excel</h4>
+                            <p class="text-sm text-slate-400">Corporate Finance Institute</p>
+                        </div>
+                        <i data-lucide="external-link" class="w-4 h-4 text-gold shrink-0 ml-2"></i>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <p class="text-xs text-white/50">Dec 2025</p>
+                        <span class="text-xs text-gold font-semibold">Verify →</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- The Arsenal Section -->
+        <div class="tile rounded-2xl p-8 md:p-12 mb-12">
+            <div class="text-center mb-10">
+                <p class="text-xs text-gold font-bold uppercase tracking-widest mb-2">Technical Skills</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-2">Tools & Technologies</h2>
+                <p class="text-slate-400">Core competencies in data analysis</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
                 <div class="tech-icon flex flex-col items-center gap-4 text-white/70 cursor-pointer">
@@ -439,7 +531,7 @@
                     </div>
                     <div class="text-center">
                         <p class="text-xl font-semibold text-white mb-1">SQL Server</p>
-                        <p class="text-sm text-white/50">Database Management & Analytics</p>
+                        <p class="text-sm text-white/50">Query Design & Analysis</p>
                     </div>
                 </div>
                 <div class="tech-icon flex flex-col items-center gap-4 text-white/70 cursor-pointer">
@@ -448,7 +540,7 @@
                     </div>
                     <div class="text-center">
                         <p class="text-xl font-semibold text-white mb-1">Excel</p>
-                        <p class="text-sm text-white/50">Advanced Analytics & Modeling</p>
+                        <p class="text-sm text-white/50">Power Pivot & Power Query</p>
                     </div>
                 </div>
             </div>
@@ -457,7 +549,7 @@
         <!-- Archive Link -->
         <div class="text-center mb-10">
             <a href="https://github.com/Saleh-Hossam?tab=repositories" target="_blank" class="inline-flex items-center gap-2 text-slate-500 hover:text-gold transition-colors text-sm font-medium border-b border-transparent hover:border-gold pb-1">
-                <span>View Full Project Archive on GitHub</span>
+                <span>View All Projects on GitHub</span>
                 <i data-lucide="external-link" class="w-4 h-4"></i>
             </a>
         </div>
@@ -482,7 +574,7 @@
             </a>
         </footer>
         
-        <p class="text-center text-white/20 text-xs">© 2026 Saleh Hossam. Crafted with precision.</p>
+        <p class="text-center text-white/20 text-xs">© 2026 Saleh Hossam. Built with passion for data.</p>
     </div>
     
     <script>
