@@ -1,346 +1,197 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saleh Hossam | Data Analyst</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        background: '#0a0a0a',
-                        'gold': '#D4AF37',
-                        'gold-dim': '#B8962E',
-                        'gold-light': '#F2D06B',
-                        'slate-blue': '#64748b',
-                        'dark-card': '#111111',
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'system-ui', 'sans-serif'],
-                    },
-                    animation: {
-                        'gradient': 'gradient 8s ease infinite',
-                        'float': 'float 6s ease-in-out infinite',
-                        'pulse-slow': 'pulse 4s ease-in-out infinite',
-                    },
-                    keyframes: {
-                        gradient: {
-                            '0%, 100%': { backgroundPosition: '0% 50%' },
-                            '50%': { backgroundPosition: '100% 50%' },
-                        },
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0px)' },
-                            '50%': { transform: 'translateY(-20px)' },
-                        },
-                    },
-                }
-            }
-        }
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <style>
-        body { background-color: #0a0a0a; font-family: 'Inter', system-ui, sans-serif; }
-        
-        /* Smooth Gradients */
-        .animated-gradient {
-            background: linear-gradient(-45deg, rgba(212, 175, 55, 0.05), rgba(100, 116, 139, 0.05), rgba(212, 175, 55, 0.08), rgba(10, 10, 10, 0.95));
-            background-size: 400% 400%;
-            animation: gradient 15s ease infinite;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saleh Hossam | Data Analyst</title>
 
-        /* Card Styles */
-        .project-card {
-            background: linear-gradient(145deg, rgba(20, 20, 20, 0.9) 0%, rgba(10, 10, 10, 0.95) 100%);
-            border: 1px solid rgba(255,255,255,0.08);
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            position: relative;
-            overflow: hidden;
-            /* Fix for unclickable links: ensure base z-index is handled */
-            z-index: 1; 
-        }
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
 
-        .project-card:hover {
-            border-color: rgba(212, 175, 55, 0.3);
-            transform: translateY(-5px);
-            box-shadow: 0 10px 40px -10px rgba(212, 175, 55, 0.15);
-        }
-
-        /* Buttons & Links - Z-Index Fix */
-        .btn-gold, .cta-primary, a {
-            position: relative;
-            z-index: 20; /* Ensures clicks work over overlays */
-        }
-
-        .btn-gold {
-            background: rgba(212, 175, 55, 0.1);
-            border: 1px solid #D4AF37;
-            transition: all 0.3s ease;
-        }
-        .btn-gold:hover {
-            background: #D4AF37;
-            color: black;
-            box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
-        }
-
-        /* Images */
-        .project-image-container {
-            position: relative;
-            overflow: hidden;
-            border-radius: 12px;
-            border: 1px solid rgba(255,255,255,0.1);
-        }
-        .project-image {
-            transition: transform 0.5s ease;
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        .project-card:hover .project-image {
-            transform: scale(1.02);
-        }
-
-        /* Mobile Optimization for Grid */
-        .skill-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1rem;
-        }
-        @media (min-width: 768px) {
-            .skill-grid {
-                grid-template-columns: repeat(3, 1fr);
-                gap: 2rem;
-            }
-        }
-
-        .floating-shape {
-            position: fixed;
-            z-index: 0;
-            pointer-events: none; /* Crucial for clickability */
-        }
-    </style>
+<style>
+body { font-family: 'Inter', sans-serif; background:#0a0a0a; }
+.project-card { transition: all .3s ease; }
+.project-card:hover { transform: translateY(-4px); }
+html { scroll-behavior: smooth; }
+</style>
 </head>
-<body class="min-h-screen text-white antialiased selection:bg-gold selection:text-black overflow-x-hidden">
 
-    <div class="floating-shape rounded-full blur-[100px] opacity-20" style="width: 400px; height: 400px; background: #D4AF37; top: -10%; left: -10%;"></div>
-    <div class="floating-shape rounded-full blur-[120px] opacity-10" style="width: 500px; height: 500px; background: #64748b; bottom: -10%; right: -10%;"></div>
+<body class="text-white">
 
-    <nav class="fixed w-full top-0 z-50 backdrop-blur-md bg-black/70 border-b border-white/5">
-        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-            <a href="#" class="text-xl font-black text-gold tracking-tighter hover:text-white transition-colors">SH</a>
-            <div class="flex gap-6 text-sm font-medium">
-                <a href="#projects" class="text-white/70 hover:text-gold transition-colors">Work</a>
-                <a href="#skills" class="text-white/70 hover:text-gold transition-colors">Skills</a>
-                <a href="#contact" class="text-white/70 hover:text-gold transition-colors">Contact</a>
-            </div>
-        </div>
-    </nav>
+<!-- NAV -->
+<nav class="sticky top-0 bg-[#0a0a0a]/90 backdrop-blur border-b border-white/10 z-50">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+    <a href="#" class="text-xl font-black text-[#D4AF37]">SH</a>
+    <div class="space-x-6 text-sm font-semibold text-white/70">
+      <a href="#projects" class="hover:text-[#D4AF37]">Projects</a>
+      <a href="#skills" class="hover:text-[#D4AF37]">Skills</a>
+      <a href="#contact" class="hover:text-[#D4AF37]">Contact</a>
+    </div>
+  </div>
+</nav>
 
-    <main class="max-w-6xl mx-auto px-4 pt-28 pb-12 relative z-10">
+<!-- HERO -->
+<section class="max-w-6xl mx-auto px-4 py-16 text-center">
+  <h1 class="text-4xl md:text-6xl font-black mb-4">
+    Saleh Hossam
+  </h1>
+  <p class="text-[#D4AF37] text-xl md:text-2xl font-bold mb-6">
+    Data Analyst
+  </p>
+  <p class="text-white/70 max-w-2xl mx-auto mb-8">
+    I turn business data into measurable insights using Power BI, SQL Server, and Excel — focused on revenue optimization, root-cause analysis, and decision support.
+  </p>
+  <a href="#projects" class="inline-block bg-[#D4AF37] text-black font-bold px-6 py-3 rounded-lg">
+    View Projects
+  </a>
+</section>
 
-        <div class="flex flex-col md:flex-row items-center gap-8 md:gap-16 mb-24">
-            <div class="relative group">
-                <div class="absolute -inset-1 bg-gradient-to-r from-gold to-slate-500 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
-                <img src="assets/img/profile.jpg" alt="Saleh Hossam" class="relative w-32 h-32 md:w-48 md:h-48 rounded-full object-cover border-2 border-white/10 shadow-2xl" onerror="this.src='https://ui-avatars.com/api/?name=Saleh+Hossam&background=D4AF37&color=000'">
-            </div>
-            
-            <div class="text-center md:text-left flex-1">
-                <div class="inline-block px-3 py-1 mb-4 border border-gold/30 rounded-full bg-gold/5 backdrop-blur-sm">
-                    <span class="text-gold text-xs font-bold tracking-widest uppercase flex items-center gap-2">
-                        <span class="w-2 h-2 rounded-full bg-gold animate-pulse"></span>
-                        Available for work
-                    </span>
-                </div>
-                <h1 class="text-4xl md:text-6xl font-black tracking-tight mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white via-gold-light to-white">
-                    Saleh Hossam
-                </h1>
-                <p class="text-xl md:text-2xl text-white/80 font-light mb-6">
-                    Data Analyst turning complex datasets into <span class="text-gold font-semibold">strategic business value</span>.
-                </p>
-                <div class="flex flex-wrap justify-center md:justify-start gap-4">
-                    <a href="https://github.com/Saleh-Hossam/Saleh-Hossam.github.io/raw/master/assets/Saleh_Hossam_Data_Analyst.pdf" class="btn-gold rounded-lg px-6 py-3 font-bold text-gold flex items-center gap-2">
-                        <i data-lucide="download" class="w-4 h-4"></i> Download CV
-                    </a>
-                    <a href="#contact" class="px-6 py-3 rounded-lg border border-white/10 hover:bg-white/5 transition-colors font-medium flex items-center gap-2">
-                        Contact Me
-                    </a>
-                </div>
-            </div>
-        </div>
+<!-- PROJECTS -->
+<section id="projects" class="max-w-6xl mx-auto px-4 pb-20 space-y-10">
 
-        <div id="skills" class="mb-24">
-            <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
-                <i data-lucide="cpu" class="text-gold"></i> Technical Arsenal
-            </h2>
-            
-            <div class="skill-grid">
-                <div class="project-card p-6 rounded-2xl flex flex-col items-center text-center group">
-                    <div class="w-16 h-16 mb-4 p-3 bg-white/5 rounded-xl group-hover:bg-white/10 transition-colors">
-                        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
-                            <path fill="#F2C811" d="M10 24h6v6h-6zM17 12h6v18h-6zM24 2h6v28h-6z"/>
-                            <path fill="#E6AD10" d="M10 24h6v1h-6zM17 12h6v1h-6zM24 2h6v1h-6z"/>
-                        </svg>
-                    </div>
-                    <h3 class="font-bold text-lg mb-1">Power BI</h3>
-                    <p class="text-xs text-gray-400">DAX, Modeling, Dashboards</p>
-                </div>
+<h2 class="text-3xl md:text-4xl font-black text-center mb-10">
+Featured Projects
+</h2>
 
-                <div class="project-card p-6 rounded-2xl flex flex-col items-center text-center group">
-                    <div class="w-16 h-16 mb-4 p-3 bg-white/5 rounded-xl group-hover:bg-white/10 transition-colors">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full">
-                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
-                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-                        </svg>
-                    </div>
-                    <h3 class="font-bold text-lg mb-1">SQL Server</h3>
-                    <p class="text-xs text-gray-400">Complex Joins, CTEs, Analysis</p>
-                </div>
+<!-- PROJECT CARD TEMPLATE -->
+<!-- 1 -->
+<a href="https://github.com/Saleh-Hossam/Adventure-Works-Business-Intelligence"
+target="_blank"
+class="project-card block border border-white/10 rounded-2xl p-6 md:p-10">
 
-                <div class="project-card p-6 rounded-2xl flex flex-col items-center text-center group">
-                    <div class="w-16 h-16 mb-4 p-3 bg-white/5 rounded-xl group-hover:bg-white/10 transition-colors">
-                        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
-                            <path fill="#21A366" d="M36,2L10,7l-4,43l30,5l24-5l4-43L36,2z"/>
-                            <path fill="#FFF" d="M22.5 45h6l5-11 5 11h6l-8-15 8-15h-6l-5 11-5-11h-6l8 15z"/>
-                        </svg>
-                    </div>
-                    <h3 class="font-bold text-lg mb-1">Excel</h3>
-                    <p class="text-xs text-gray-400">Power Pivot, Power Query</p>
-                </div>
-            </div>
-        </div>
+<h3 class="text-2xl font-bold mb-3">🚲 Adventure Works Business Intelligence</h3>
 
-        <div id="projects" class="space-y-12">
-            <div class="flex items-end justify-between mb-8">
-                <div>
-                    <h2 class="text-3xl md:text-4xl font-black text-white mb-2">Selected Work</h2>
-                    <p class="text-gray-400">Real-world business problems solved with data.</p>
-                </div>
-            </div>
+<p class="text-white/70 mb-4">
+Identified $202K in revenue recovery opportunity through product performance audit and KPI modeling.
+</p>
 
-            <div class="project-card rounded-2xl p-5 md:p-8"> <div class="flex flex-col lg:flex-row gap-8">
-                    <div class="order-2 lg:order-1 flex-1">
-                        <div class="flex gap-2 mb-4 flex-wrap">
-                            <span class="px-3 py-1 bg-gold/10 text-gold text-xs font-bold rounded uppercase">Power BI</span>
-                            <span class="px-3 py-1 bg-white/5 text-gray-300 text-xs font-bold rounded uppercase">Revenue Analysis</span>
-                        </div>
-                        <h3 class="text-2xl font-bold text-white mb-3">Adventure Works Intelligence</h3>
-                        <p class="text-gray-300 mb-6 leading-relaxed text-sm md:text-base">
-                            Identified <span class="text-gold font-bold">$202K</span> in revenue recovery opportunities. Built an interactive dashboard to monitor inventory turnover and revenue patterns across product lines.
-                        </p>
-                        <div class="grid grid-cols-2 gap-4 mb-6">
-                            <div class="p-3 bg-white/5 rounded-lg border border-white/5">
-                                <p class="text-xs text-gray-500 uppercase font-bold">Opportunity</p>
-                                <p class="text-xl font-bold text-gold">$202,000</p>
-                            </div>
-                            <div class="p-3 bg-white/5 rounded-lg border border-white/5">
-                                <p class="text-xs text-gray-500 uppercase font-bold">Focus</p>
-                                <p class="text-xl font-bold text-white">Mountain-200</p>
-                            </div>
-                        </div>
-                        <a href="https://github.com/Saleh-Hossam/Adventure-Works-Business-Intelligence" target="_blank" class="inline-flex items-center gap-2 text-gold font-bold hover:underline">
-                            View Case Study <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                        </a>
-                    </div>
-                    <div class="order-1 lg:order-2 flex-1">
-                        <div class="project-image-container aspect-video">
-                            <img src="https://github.com/Saleh-Hossam/Adventure-Works-Business-Intelligence/blob/main/assets/overview.gif?raw=true" alt="Adventure Works Dashboard" class="project-image object-cover w-full h-full">
-                        </div>
-                    </div>
-                </div>
-            </div>
+<p class="text-[#D4AF37] text-3xl font-black mb-6">$202K Opportunity</p>
 
-            <div class="project-card rounded-2xl p-5 md:p-8">
-                <div class="flex flex-col lg:flex-row gap-8">
-                    <div class="order-2 lg:order-1 flex-1">
-                        <div class="flex gap-2 mb-4 flex-wrap">
-                            <span class="px-3 py-1 bg-blue-500/10 text-blue-400 text-xs font-bold rounded uppercase">SQL</span>
-                            <span class="px-3 py-1 bg-white/5 text-gray-300 text-xs font-bold rounded uppercase">Root Cause</span>
-                        </div>
-                        <h3 class="text-2xl font-bold text-white mb-3">Supply Chain Analysis</h3>
-                        <p class="text-gray-300 mb-6 leading-relaxed text-sm md:text-base">
-                            Challenged assumptions: Everyone thought late deliveries were the problem. Data proved <strong>inventory loss</strong> was the real culprit, costing 32,000+ units.
-                        </p>
-                        <a href="https://github.com/Saleh-Hossam/Supply-Chain-Root-Cause" target="_blank" class="inline-flex items-center gap-2 text-gold font-bold hover:underline">
-                            View Case Study <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                        </a>
-                    </div>
-                    <div class="order-1 lg:order-2 flex-1">
-                        <div class="project-image-container aspect-video">
-                            <img src="https://github.com/Saleh-Hossam/Supply-Chain-Root-Cause/blob/main/assets/Preview__.gif?raw=true" alt="Supply Chain Analysis" class="project-image object-cover w-full h-full">
-                        </div>
-                    </div>
-                </div>
-            </div>
+<img
+src="https://raw.githubusercontent.com/Saleh-Hossam/Adventure-Works-Business-Intelligence/main/assets/overview.gif"
+class="w-full rounded-xl"
+loading="lazy">
 
-            <div class="project-card rounded-2xl p-5 md:p-8">
-                <div class="flex flex-col lg:flex-row gap-8">
-                    <div class="order-2 lg:order-1 flex-1">
-                        <div class="flex gap-2 mb-4 flex-wrap">
-                            <span class="px-3 py-1 bg-green-500/10 text-green-400 text-xs font-bold rounded uppercase">Excel</span>
-                            <span class="px-3 py-1 bg-white/5 text-gray-300 text-xs font-bold rounded uppercase">Churn Analysis</span>
-                        </div>
-                        <h3 class="text-2xl font-bold text-white mb-3">Telecom Churn Analysis</h3>
-                        <p class="text-gray-300 mb-6 leading-relaxed text-sm md:text-base">
-                            Analyzed 7,000+ customers to stop a $137K monthly revenue bleed. Discovered Fiber Optic users on month-to-month contracts were leaving at a rate of 40%.
-                        </p>
-                        <a href="https://github.com/Saleh-Hossam/Telecom-Churn-Analysis" target="_blank" class="inline-flex items-center gap-2 text-gold font-bold hover:underline">
-                            View Case Study <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                        </a>
-                    </div>
-                    <div class="order-1 lg:order-2 flex-1">
-                        <div class="project-image-container aspect-video">
-                            <img src="https://raw.githubusercontent.com/Saleh-Hossam/Telecom-Churn-Analysis/main/assets/Exective_telecom.gif" 
-                                 alt="Telecom Dashboard" 
-                                 class="project-image object-cover w-full h-full"
-                                 onerror="this.src='assets/img/profile.jpg'; this.style.opacity=0.5;"
-                            >
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="project-card rounded-2xl p-5 md:p-8">
-                <div class="flex flex-col lg:flex-row gap-8">
-                    <div class="order-2 lg:order-1 flex-1">
-                        <div class="flex gap-2 mb-4 flex-wrap">
-                            <span class="px-3 py-1 bg-green-500/10 text-green-400 text-xs font-bold rounded uppercase">Excel</span>
-                            <span class="px-3 py-1 bg-white/5 text-gray-300 text-xs font-bold rounded uppercase">RFM Analysis</span>
-                        </div>
-                        <h3 class="text-2xl font-bold text-white mb-3">Strategic Sales & RFM</h3>
-                        <p class="text-gray-300 mb-6 leading-relaxed text-sm md:text-base">
-                            Implemented RFM segmentation model to analyze customer behavior patterns. Created star schema data model with advanced DAX measures.
-                        </p>
-                        <a href="https://github.com/Saleh-Hossam/Strategic-Sales-RFM-Dashboard" target="_blank" class="inline-flex items-center gap-2 text-gold font-bold hover:underline">
-                            View Case Study <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                        </a>
-                    </div>
-                    <div class="order-1 lg:order-2 flex-1">
-                        <div class="project-image-container aspect-video">
-                            <img src="https://github.com/Saleh-Hossam/Strategic-Sales-RFM-Dashboard/blob/main/assets/Overview.gif?raw=true" alt="Strategic Sales" class="project-image object-cover w-full h-full">
-                        </div>
-                    </div>
-                </div>
-            </div>
+</a>
 
-        </div>
-    </main>
+<!-- 2 -->
+<a href="https://github.com/Saleh-Hossam/Strategic-Sales-RFM-Dashboard"
+target="_blank"
+class="project-card block border border-white/10 rounded-2xl p-6 md:p-10">
 
-    <footer class="border-t border-white/10 bg-black py-12 text-center">
-        <p class="text-gray-500 text-sm">© 2026 Saleh Hossam. Built for impact.</p>
-        <div class="flex justify-center gap-6 mt-4">
-            <a href="https://linkedin.com/in/saleh-hossam" class="text-gray-400 hover:text-gold transition-colors"><i data-lucide="linkedin"></i></a>
-            <a href="https://github.com/Saleh-Hossam" class="text-gray-400 hover:text-gold transition-colors"><i data-lucide="github"></i></a>
-            <a href="mailto:salehhossam611@gmail.com" class="text-gray-400 hover:text-gold transition-colors"><i data-lucide="mail"></i></a>
-        </div>
-    </footer>
+<h3 class="text-2xl font-bold mb-3">🚀 Strategic Sales & RFM Intelligence</h3>
 
-    <script>
-        lucide.createIcons();
-    </script>
+<p class="text-white/70 mb-4">
+Built RFM segmentation model with star schema and DAX measures to drive retention insights.
+</p>
+
+<img
+src="https://raw.githubusercontent.com/Saleh-Hossam/Strategic-Sales-RFM-Dashboard/main/assets/Overview.gif"
+class="w-full rounded-xl"
+loading="lazy">
+
+</a>
+
+<!-- 3 -->
+<a href="https://github.com/Saleh-Hossam/Supply-Chain-Root-Cause"
+target="_blank"
+class="project-card block border border-white/10 rounded-2xl p-6 md:p-10">
+
+<h3 class="text-2xl font-bold mb-3">📦 Supply Chain Root Cause Analysis</h3>
+
+<p class="text-white/70 mb-4">
+Discovered 32,000+ units lost due to inventory discrepancies using SQL + Power BI.
+</p>
+
+<p class="text-[#D4AF37] text-3xl font-black mb-6">32,000+ Units Impact</p>
+
+<img
+src="https://raw.githubusercontent.com/Saleh-Hossam/Supply-Chain-Root-Cause/main/assets/Preview__.gif"
+class="w-full rounded-xl"
+loading="lazy">
+
+</a>
+
+<!-- 4 -->
+<a href="https://github.com/Saleh-Hossam/Dannys-Diner-SQL"
+target="_blank"
+class="project-card block border border-white/10 rounded-2xl p-6 md:p-10">
+
+<h3 class="text-2xl font-bold mb-3">🍜 Restaurant Order Analysis (SQL)</h3>
+
+<p class="text-white/70 mb-4">
+Advanced SQL analysis using CTEs and window functions for customer lifetime value modeling.
+</p>
+
+<img
+src="https://raw.githubusercontent.com/Saleh-Hossam/Dannys-Diner-SQL/main/assets/Cover.png"
+class="w-full rounded-xl"
+loading="lazy">
+
+</a>
+
+<!-- 5 -->
+<a href="https://github.com/Saleh-Hossam/Telecom-Customer-Churn"
+target="_blank"
+class="project-card block border border-white/10 rounded-2xl p-6 md:p-10">
+
+<h3 class="text-2xl font-bold mb-3">📞 Telecom Customer Churn Analysis</h3>
+
+<p class="text-white/70 mb-4">
+Analyzed 7,043 customers and identified $137K monthly recurring revenue at risk.
+</p>
+
+<p class="text-[#D4AF37] text-3xl font-black mb-6">$137K MRR Risk</p>
+
+<img
+src="https://raw.githubusercontent.com/Saleh-Hossam/Telecom-Customer-Churn/main/assets/Exective_telecom.gif"
+class="w-full rounded-xl"
+loading="lazy">
+
+</a>
+
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="bg-[#111] py-16">
+<div class="max-w-4xl mx-auto px-4 text-center">
+
+<h2 class="text-3xl font-black mb-10">Technical Skills</h2>
+
+<div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+
+<div class="flex flex-col items-center gap-3">
+<img src="https://cdn.worldvectorlogo.com/logos/power-bi.svg" class="w-12" alt="Power BI">
+<p>Power BI</p>
+</div>
+
+<div class="flex flex-col items-center gap-3">
+<img src="https://cdn.worldvectorlogo.com/logos/microsoft-sql-server.svg" class="w-12" alt="SQL Server">
+<p>SQL Server</p>
+</div>
+
+<div class="flex flex-col items-center gap-3">
+<img src="https://cdn.worldvectorlogo.com/logos/microsoft-excel-2013.svg" class="w-12" alt="Excel">
+<p>Excel</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-16 text-center">
+<h2 class="text-3xl font-black mb-6">Get in Touch</h2>
+<div class="space-x-6">
+<a href="mailto:salehhossam611@gmail.com" class="text-[#D4AF37] font-semibold">Email</a>
+<a href="https://linkedin.com/in/saleh-hossam" target="_blank" class="text-[#D4AF37] font-semibold">LinkedIn</a>
+<a href="https://github.com/Saleh-Hossam" target="_blank" class="text-[#D4AF37] font-semibold">GitHub</a>
+</div>
+</section>
+
+<footer class="text-center text-white/30 pb-10 text-sm">
+© 2026 Saleh Hossam
+</footer>
+
 </body>
 </html>
