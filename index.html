@@ -23,6 +23,7 @@
                     animation: {
                         'gradient': 'gradient 8s ease infinite',
                         'float': 'float 6s ease-in-out infinite',
+                        'shimmer': 'shimmer 2s linear infinite',
                     },
                     keyframes: {
                         gradient: {
@@ -32,6 +33,10 @@
                         float: {
                             '0%, 100%': { transform: 'translateY(0px)' },
                             '50%': { transform: 'translateY(-20px)' },
+                        },
+                        shimmer: {
+                            '0%': { backgroundPosition: '-200% 0' },
+                            '100%': { backgroundPosition: '200% 0' },
                         },
                     },
                 }
@@ -73,6 +78,72 @@
             box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
         }
 
+        /* ENHANCED: Standout Case Study Button */
+        .btn-case-study {
+            background: linear-gradient(135deg, #D4AF37 0%, #B8962E 100%);
+            color: #000;
+            font-weight: 700;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+        }
+
+        .btn-case-study::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s;
+        }
+
+        .btn-case-study:hover::before {
+            left: 100%;
+        }
+
+        .btn-case-study:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(212, 175, 55, 0.5);
+        }
+
+        .btn-case-study:active {
+            transform: translateY(0);
+        }
+
+        /* NEW: Metrics Counter Animation */
+        .metric-card {
+            background: linear-gradient(145deg, rgba(212, 175, 55, 0.05) 0%, rgba(212, 175, 55, 0.02) 100%);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .metric-card:hover {
+            border-color: rgba(212, 175, 55, 0.4);
+            background: linear-gradient(145deg, rgba(212, 175, 55, 0.1) 0%, rgba(212, 175, 55, 0.05) 100%);
+            transform: translateY(-3px);
+        }
+
+        /* NEW: Data Visualization Accent */
+        .data-viz-accent {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            opacity: 0.05;
+            pointer-events: none;
+        }
+
         .floating-shape {
             position: fixed;
             z-index: 0;
@@ -112,6 +183,61 @@
                 grid-template-columns: repeat(3, 1fr);
                 gap: 2rem;
             }
+        }
+
+        /* NEW: See All Projects Button */
+        .btn-see-all {
+            background: transparent;
+            border: 2px solid #D4AF37;
+            color: #D4AF37;
+            font-weight: 700;
+            padding: 1rem 2rem;
+            border-radius: 0.75rem;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-see-all::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: #D4AF37;
+            transform: translate(-50%, -50%);
+            transition: width 0.5s, height 0.5s;
+        }
+
+        .btn-see-all:hover::before {
+            width: 300%;
+            height: 300%;
+        }
+
+        .btn-see-all:hover {
+            color: #000;
+            border-color: #D4AF37;
+            transform: scale(1.05);
+        }
+
+        .btn-see-all span {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* NEW: Impact Numbers Highlight */
+        .impact-number {
+            color: #D4AF37;
+            font-weight: 700;
+            background: linear-gradient(135deg, #D4AF37, #F2D06B);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
     </style>
 </head>
@@ -156,7 +282,7 @@
                 </div>
 
                 <p class="text-xl md:text-2xl text-white/80 font-light mb-6">
-                    Aspiring Data Analyst turning complex datasets into <span class="text-gold font-semibold">actionable insights</span>.
+                    Data Analyst turning complex datasets into <span class="text-gold font-semibold">actionable insights</span>.
                 </p>
                 
                 <div class="flex justify-center md:justify-start gap-8 mb-8 border-t border-b border-white/10 py-4">
@@ -194,7 +320,7 @@
                     I'm fascinated by the stories hidden in data. Every spreadsheet and database has the potential to reveal something that changes how a business operates—and I want to be the person who finds those insights.
                 </p>
                 <p class="text-gray-300 leading-relaxed mb-4">
-                    Coming from an accounting background, I bring a unique perspective to data analysis—I understand the business context behind the numbers. Through my personal projects, I've experienced those breakthrough moments, like when I discovered that a small 5% inventory loss was actually costing <strong class="text-gold">32,000+ units</strong>, or when I found <strong class="text-gold">$202K</strong> in untapped revenue potential.
+                    Coming from an accounting background, I bring a unique perspective to data analysis—I understand the business context behind the numbers. Through my personal projects, I've experienced those breakthrough moments, like when I discovered that a small 5% inventory loss was actually costing <strong class="impact-number">32,000+ units</strong>, or when I found <strong class="impact-number">$202K</strong> in untapped revenue potential.
                 </p>
                 <p class="text-white/60 italic text-sm border-l-2 border-gold pl-4">
                     Currently learning: Advanced DAX patterns, SQL optimization techniques, and storytelling with data visualization.
@@ -259,10 +385,11 @@
                         </div>
                         <h3 class="text-2xl font-bold text-white mb-3">Adventure Works Intelligence</h3>
                         <p class="text-gray-300 mb-6 leading-relaxed text-sm md:text-base">
-                            Identified <span class="text-gold font-bold">$202K</span> in revenue recovery opportunities. Built an interactive dashboard to monitor inventory turnover and revenue patterns across product lines.
+                            Identified <span class="impact-number">$202K</span> in revenue recovery opportunities. Built an interactive dashboard to monitor inventory turnover and revenue patterns across product lines.
                         </p>
-                        <a href="https://github.com/Saleh-Hossam/Adventure-Works-Business-Intelligence" target="_blank" class="inline-flex items-center gap-2 text-gold font-bold hover:underline">
-                            View Case Study <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        <a href="https://github.com/Saleh-Hossam/Adventure-Works-Business-Intelligence" target="_blank" class="btn-case-study">
+                            <span>View Full Case Study</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
                         </a>
                     </div>
                     <div class="order-1 lg:order-2 flex-1">
@@ -284,8 +411,9 @@
                         <p class="text-gray-300 mb-6 leading-relaxed text-sm md:text-base">
                             Transform raw sales data into actionable customer insights using RFM segmentation. Created star schema data model with advanced DAX measures to highlight profit opportunities.
                         </p>
-                        <a href="https://github.com/Saleh-Hossam/Strategic-Sales-RFM-Dashboard" target="_blank" class="inline-flex items-center gap-2 text-gold font-bold hover:underline">
-                            View Case Study <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        <a href="https://github.com/Saleh-Hossam/Strategic-Sales-RFM-Dashboard" target="_blank" class="btn-case-study">
+                            <span>View Full Case Study</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
                         </a>
                     </div>
                     <div class="order-1 lg:order-2 flex-1">
@@ -305,10 +433,11 @@
                         </div>
                         <h3 class="text-2xl font-bold text-white mb-3">Supply Chain Analysis</h3>
                         <p class="text-gray-300 mb-6 leading-relaxed text-sm md:text-base">
-                            Challenged assumptions: Everyone thought late deliveries were the problem. Data proved <strong>inventory loss</strong> was the real culprit, costing 32,000+ units.
+                            Challenged assumptions: Everyone thought late deliveries were the problem. Data proved <strong class="impact-number">inventory loss</strong> was the real culprit, costing <span class="impact-number">32,000+ units</span>.
                         </p>
-                        <a href="https://github.com/Saleh-Hossam/Supply-Chain-Root-Cause" target="_blank" class="inline-flex items-center gap-2 text-gold font-bold hover:underline">
-                            View Case Study <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        <a href="https://github.com/Saleh-Hossam/Supply-Chain-Root-Cause" target="_blank" class="btn-case-study">
+                            <span>View Full Case Study</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
                         </a>
                     </div>
                     <div class="order-1 lg:order-2 flex-1">
@@ -328,10 +457,11 @@
                         </div>
                         <h3 class="text-2xl font-bold text-white mb-3">Telecom Churn Analysis</h3>
                         <p class="text-gray-300 mb-6 leading-relaxed text-sm md:text-base">
-                            Analyzed 7,000+ customers to stop a $137K monthly revenue bleed. Discovered Fiber Optic users on month-to-month contracts were leaving at a rate of 40%.
+                            Analyzed <span class="impact-number">7,000+ customers</span> to stop a <span class="impact-number">$137K</span> monthly revenue bleed. Discovered Fiber Optic users on month-to-month contracts were leaving at a rate of 40%.
                         </p>
-                        <a href="https://github.com/Saleh-Hossam/Telecom-Customer-Churn" target="_blank" class="inline-flex items-center gap-2 text-gold font-bold hover:underline">
-                            View Case Study <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        <a href="https://github.com/Saleh-Hossam/Telecom-Customer-Churn" target="_blank" class="btn-case-study">
+                            <span>View Full Case Study</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
                         </a>
                     </div>
                     <div class="order-1 lg:order-2 flex-1">
@@ -355,8 +485,9 @@
                         <p class="text-gray-300 mb-6 leading-relaxed text-sm md:text-base">
                             Optimized a restaurant's loyalty program by analyzing customer spending patterns. Used Window Functions and CTEs to calculate customer lifetime value.
                         </p>
-                        <a href="https://github.com/Saleh-Hossam/Dannys-Diner-SQL" target="_blank" class="inline-flex items-center gap-2 text-gold font-bold hover:underline">
-                            View Case Study <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        <a href="https://github.com/Saleh-Hossam/Dannys-Diner-SQL" target="_blank" class="btn-case-study">
+                            <span>View Full Case Study</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
                         </a>
                     </div>
                     <div class="order-1 lg:order-2 flex-1">
@@ -367,6 +498,14 @@
                 </div>
             </div>
 
+            <!-- NEW: See All Projects CTA -->
+            <div class="text-center py-12">
+                <a href="https://github.com/Saleh-Hossam?tab=repositories" target="_blank" class="btn-see-all">
+                    <span>Explore All Projects on GitHub</span>
+                    <i data-lucide="external-link" class="w-5 h-5"></i>
+                </a>
+            </div>
+
         </div>
 
         <div id="certs" class="mb-24 scroll-mt-28">
@@ -374,70 +513,70 @@
                 <i data-lucide="award" class="text-gold"></i> Professional Certifications
             </h2>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <!-- Power Pivot Fundamentals -->
-                <div class="project-card p-6 rounded-xl flex items-start gap-4">
-                    <div class="p-3 bg-white/5 rounded-lg border border-white/10 shrink-0">
-                        <i data-lucide="award" class="w-8 h-8 text-gold"></i>
+                <div class="project-card p-4 rounded-xl">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="p-2 bg-white/5 rounded-lg border border-white/10 shrink-0">
+                            <i data-lucide="award" class="w-5 h-5 text-gold"></i>
+                        </div>
+                        <h3 class="font-bold text-white text-sm">Power Pivot Fundamentals</h3>
                     </div>
-                    <div>
-                        <h3 class="font-bold text-white text-lg">Power Pivot Fundamentals</h3>
-                        <p class="text-gray-400 text-sm mb-2">Corporate Finance Institute • Jan 2026</p>
-                        <p class="text-gray-500 text-xs">Skills: Power Pivot, Data Modeling, Excel</p>
-                        <a href="https://www.coursera.org/account/accomplishments/verify/QXNA559ST2EE" target="_blank" class="inline-block mt-3 text-gold text-xs font-bold hover:underline">Show Credential →</a>
-                    </div>
+                    <p class="text-gray-400 text-xs mb-2">Corporate Finance Institute</p>
+                    <p class="text-gray-500 text-xs mb-3">Jan 2026</p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/QXNA559ST2EE" target="_blank" class="inline-block text-gold text-xs font-bold hover:underline">Show Credential →</a>
                 </div>
 
                 <!-- Power Query Fundamentals -->
-                <div class="project-card p-6 rounded-xl flex items-start gap-4">
-                    <div class="p-3 bg-white/5 rounded-lg border border-white/10 shrink-0">
-                        <i data-lucide="award" class="w-8 h-8 text-gold"></i>
+                <div class="project-card p-4 rounded-xl">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="p-2 bg-white/5 rounded-lg border border-white/10 shrink-0">
+                            <i data-lucide="award" class="w-5 h-5 text-gold"></i>
+                        </div>
+                        <h3 class="font-bold text-white text-sm">Power Query Fundamentals</h3>
                     </div>
-                    <div>
-                        <h3 class="font-bold text-white text-lg">Power Query Fundamentals</h3>
-                        <p class="text-gray-400 text-sm mb-2">Corporate Finance Institute • Jan 2026</p>
-                        <p class="text-gray-500 text-xs">Skills: Power Query, ETL, Data Transformation</p>
-                        <a href="https://www.coursera.org/account/accomplishments/verify/HDSYVJWK68H6" target="_blank" class="inline-block mt-3 text-gold text-xs font-bold hover:underline">Show Credential →</a>
-                    </div>
+                    <p class="text-gray-400 text-xs mb-2">Corporate Finance Institute</p>
+                    <p class="text-gray-500 text-xs mb-3">Jan 2026</p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/HDSYVJWK68H6" target="_blank" class="inline-block text-gold text-xs font-bold hover:underline">Show Credential →</a>
                 </div>
 
                 <!-- Introduction to Databases -->
-                <div class="project-card p-6 rounded-xl flex items-start gap-4">
-                    <div class="p-3 bg-white/5 rounded-lg border border-white/10 shrink-0">
-                        <i data-lucide="award" class="w-8 h-8 text-gold"></i>
+                <div class="project-card p-4 rounded-xl">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="p-2 bg-white/5 rounded-lg border border-white/10 shrink-0">
+                            <i data-lucide="award" class="w-5 h-5 text-gold"></i>
+                        </div>
+                        <h3 class="font-bold text-white text-sm">Introduction to Databases</h3>
                     </div>
-                    <div>
-                        <h3 class="font-bold text-white text-lg">Introduction to Databases</h3>
-                        <p class="text-gray-400 text-sm mb-2">Meta • Jan 2026</p>
-                        <p class="text-gray-500 text-xs">Skills: SQL, Database Design, Relational Databases</p>
-                        <a href="https://www.coursera.org/account/accomplishments/verify/NWAC9GHU59HU" target="_blank" class="inline-block mt-3 text-gold text-xs font-bold hover:underline">Show Credential →</a>
-                    </div>
+                    <p class="text-gray-400 text-xs mb-2">Meta</p>
+                    <p class="text-gray-500 text-xs mb-3">Jan 2026</p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/NWAC9GHU59HU" target="_blank" class="inline-block text-gold text-xs font-bold hover:underline">Show Credential →</a>
                 </div>
 
                 <!-- Statistical Distributions & Business Decisions -->
-                <div class="project-card p-6 rounded-xl flex items-start gap-4">
-                    <div class="p-3 bg-white/5 rounded-lg border border-white/10 shrink-0">
-                        <i data-lucide="award" class="w-8 h-8 text-gold"></i>
+                <div class="project-card p-4 rounded-xl">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="p-2 bg-white/5 rounded-lg border border-white/10 shrink-0">
+                            <i data-lucide="award" class="w-5 h-5 text-gold"></i>
+                        </div>
+                        <h3 class="font-bold text-white text-sm">Statistical Distributions</h3>
                     </div>
-                    <div>
-                        <h3 class="font-bold text-white text-lg">Statistical Distributions & Business Decisions</h3>
-                        <p class="text-gray-400 text-sm mb-2">Rice University • Dec 2025</p>
-                        <p class="text-gray-500 text-xs">Skills: Statistics, Business Analytics, Decision Making</p>
-                        <a href="https://www.coursera.org/account/accomplishments/verify/J779XYZWERFM" target="_blank" class="inline-block mt-3 text-gold text-xs font-bold hover:underline">Show Credential →</a>
-                    </div>
+                    <p class="text-gray-400 text-xs mb-2">Rice University</p>
+                    <p class="text-gray-500 text-xs mb-3">Dec 2025</p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/J779XYZWERFM" target="_blank" class="inline-block text-gold text-xs font-bold hover:underline">Show Credential →</a>
                 </div>
 
                 <!-- Fundamentals of Data Analysis in Excel -->
-                <div class="project-card p-6 rounded-xl flex items-start gap-4">
-                    <div class="p-3 bg-white/5 rounded-lg border border-white/10 shrink-0">
-                        <i data-lucide="award" class="w-8 h-8 text-gold"></i>
+                <div class="project-card p-4 rounded-xl">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="p-2 bg-white/5 rounded-lg border border-white/10 shrink-0">
+                            <i data-lucide="award" class="w-5 h-5 text-gold"></i>
+                        </div>
+                        <h3 class="font-bold text-white text-sm">Data Analysis in Excel</h3>
                     </div>
-                    <div>
-                        <h3 class="font-bold text-white text-lg">Fundamentals of Data Analysis in Excel</h3>
-                        <p class="text-gray-400 text-sm mb-2">Corporate Finance Institute • Dec 2025</p>
-                        <p class="text-gray-500 text-xs">Skills: Excel, Data Analysis, Pivot Tables, Charts</p>
-                        <a href="https://www.coursera.org/account/accomplishments/verify/RVWL2Z49MBTL" target="_blank" class="inline-block mt-3 text-gold text-xs font-bold hover:underline">Show Credential →</a>
-                    </div>
+                    <p class="text-gray-400 text-xs mb-2">Corporate Finance Institute</p>
+                    <p class="text-gray-500 text-xs mb-3">Dec 2025</p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/RVWL2Z49MBTL" target="_blank" class="inline-block text-gold text-xs font-bold hover:underline">Show Credential →</a>
                 </div>
             </div>
         </div>
