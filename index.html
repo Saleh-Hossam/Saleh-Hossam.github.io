@@ -112,18 +112,12 @@
             transition: left 0.5s;
         }
 
-        .btn-case-study:hover::before {
-            left: 100%;
-        }
-
+        .btn-case-study:hover::before { left: 100%; }
         .btn-case-study:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 25px rgba(212, 175, 55, 0.5);
         }
-
-        .btn-case-study:active {
-            transform: translateY(0);
-        }
+        .btn-case-study:active { transform: translateY(0); }
 
         .metric-card {
             background: linear-gradient(145deg, rgba(212, 175, 55, 0.05) 0%, rgba(212, 175, 55, 0.02) 100%);
@@ -132,7 +126,6 @@
             padding: 1.5rem;
             transition: all 0.3s ease;
         }
-
         .metric-card:hover {
             border-color: rgba(212, 175, 55, 0.4);
             background: linear-gradient(145deg, rgba(212, 175, 55, 0.1) 0%, rgba(212, 175, 55, 0.05) 100%);
@@ -145,7 +138,6 @@
             pointer-events: none; 
         }
         
-        /* UPDATED: 4-column grid for 4 skills */
         .skill-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -172,7 +164,6 @@
             position: relative;
             overflow: hidden;
         }
-
         .btn-see-all::before {
             content: '';
             position: absolute;
@@ -185,22 +176,9 @@
             transform: translate(-50%, -50%);
             transition: width 0.5s, height 0.5s;
         }
-
-        .btn-see-all:hover::before {
-            width: 300%;
-            height: 300%;
-        }
-
-        .btn-see-all:hover {
-            color: #000;
-            border-color: #D4AF37;
-            transform: scale(1.05);
-        }
-
-        .btn-see-all span {
-            position: relative;
-            z-index: 1;
-        }
+        .btn-see-all:hover::before { width: 300%; height: 300%; }
+        .btn-see-all:hover { color: #000; border-color: #D4AF37; transform: scale(1.05); }
+        .btn-see-all span { position: relative; z-index: 1; }
 
         .impact-number {
             color: #D4AF37;
@@ -211,13 +189,8 @@
             background-clip: text;
         }
         
-        .tech-badge {
-            transition: all 0.3s ease;
-        }
-        
-        .tech-badge:hover {
-            transform: translateY(-2px);
-        }
+        .tech-badge { transition: all 0.3s ease; }
+        .tech-badge:hover { transform: translateY(-2px); }
 
         /* FLOATING SOCIAL SIDEBAR */
         .floating-social {
@@ -230,7 +203,6 @@
             flex-direction: column;
             gap: 1rem;
         }
-
         .social-icon {
             width: 48px;
             height: 48px;
@@ -243,35 +215,18 @@
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             backdrop-filter: blur(10px);
         }
-
-        .social-icon:hover {
-            transform: translateX(8px);
-            border-color: #D4AF37;
-            background: rgba(212, 175, 55, 0.1);
-            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.2);
-        }
-
-        .social-icon svg {
-            width: 20px;
-            height: 20px;
-            transition: color 0.3s ease;
-        }
-
+        .social-icon:hover { transform: translateX(8px); border-color: #D4AF37; background: rgba(212, 175, 55, 0.1); box-shadow: 0 4px 20px rgba(212, 175, 55, 0.2); }
+        .social-icon svg { width: 20px; height: 20px; transition: color 0.3s ease; }
         .social-icon.linkedin svg { color: #0A66C2; }
         .social-icon.whatsapp svg { color: #25D366; }
         .social-icon.github svg, .social-icon.email svg { color: #D4AF37; }
-
         .social-icon:hover svg { color: #F2D06B; }
-
         .social-icon.linkedin:hover { border-color: #0A66C2; background: rgba(10, 102, 194, 0.1); }
         .social-icon.linkedin:hover svg { color: #0A66C2; }
         .social-icon.github:hover { border-color: #D4AF37; background: rgba(212, 175, 55, 0.1); }
         .social-icon.whatsapp:hover { border-color: #25D366; background: rgba(37, 211, 102, 0.1); }
         .social-icon.email:hover { border-color: #D4AF37; background: rgba(212, 175, 55, 0.1); }
-
-        @media (max-width: 1024px) {
-            .floating-social { display: none; }
-        }
+        @media (max-width: 1024px) { .floating-social { display: none; } }
 
         .fade-in { opacity: 1; transform: translateY(0); }
         .fade-in.visible { opacity: 1; transform: translateY(0); }
@@ -290,7 +245,6 @@
             position: relative;
             overflow: hidden;
         }
-
         .contact-icon-large::before {
             content: '';
             position: absolute;
@@ -303,23 +257,9 @@
             transform: translate(-50%, -50%);
             transition: width 0.4s, height 0.4s;
         }
-
         .contact-icon-large:hover::before { width: 200%; height: 200%; }
-
-        .contact-icon-large:hover {
-            transform: translateY(-8px) scale(1.05);
-            border-color: #D4AF37;
-            box-shadow: 0 8px 30px rgba(212, 175, 55, 0.3);
-        }
-
-        .contact-icon-large svg {
-            width: 28px;
-            height: 28px;
-            transition: color 0.3s ease;
-            position: relative;
-            z-index: 1;
-        }
-
+        .contact-icon-large:hover { transform: translateY(-8px) scale(1.05); border-color: #D4AF37; box-shadow: 0 8px 30px rgba(212, 175, 55, 0.3); }
+        .contact-icon-large svg { width: 28px; height: 28px; transition: color 0.3s ease; position: relative; z-index: 1; }
         .contact-icon-large.linkedin svg { color: #0A66C2; }
         .contact-icon-large.whatsapp svg { color: #25D366; }
         .contact-icon-large.github svg, .contact-icon-large.email svg { color: #D4AF37; }
@@ -328,18 +268,120 @@
         .contact-icon-large.linkedin:hover svg { color: #0A66C2; }
         .contact-icon-large.whatsapp:hover { border-color: #25D366; }
         .contact-icon-large.whatsapp:hover svg { color: #25D366; }
-
-        .contact-label {
-            font-size: 0.75rem;
-            color: rgba(255, 255, 255, 0.5);
-            margin-top: 0.5rem;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-
+        .contact-label { font-size: 0.75rem; color: rgba(255, 255, 255, 0.5); margin-top: 0.5rem; font-weight: 500; transition: color 0.3s ease; }
         .contact-icon-large:hover + .contact-label { color: #D4AF37; }
 
-        /* Icon helper */
+        /* ── CERT SECTION STYLES ── */
+        .cert-issuer-block { margin-bottom: 2rem; }
+
+        .cert-issuer-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+        .cert-issuer-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+        .cert-issuer-name {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+        .cert-issuer-count {
+            font-size: 0.65rem;
+            font-weight: 500;
+            padding: 2px 8px;
+            border-radius: 20px;
+            margin-left: auto;
+        }
+
+        /* CFI = gold */
+        .issuer-cfi .cert-issuer-dot { background: #D4AF37; }
+        .issuer-cfi .cert-issuer-name { color: #D4AF37; }
+        .issuer-cfi .cert-issuer-count { background: rgba(212,175,55,0.12); color: #D4AF37; border: 1px solid rgba(212,175,55,0.25); }
+
+        /* HackerRank = green */
+        .issuer-hackerrank .cert-issuer-dot { background: #2EC866; }
+        .issuer-hackerrank .cert-issuer-name { color: #2EC866; }
+        .issuer-hackerrank .cert-issuer-count { background: rgba(46,200,102,0.1); color: #2EC866; border: 1px solid rgba(46,200,102,0.25); }
+
+        /* Others = blue */
+        .issuer-other .cert-issuer-dot { background: #60A5FA; }
+        .issuer-other .cert-issuer-name { color: #60A5FA; }
+        .issuer-other .cert-issuer-count { background: rgba(96,165,250,0.1); color: #60A5FA; border: 1px solid rgba(96,165,250,0.25); }
+
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.75rem;
+        }
+        @media (min-width: 768px) {
+            .cert-grid { grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+        }
+        .cert-grid-2col {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.75rem;
+        }
+        @media (min-width: 768px) {
+            .cert-grid-2col { gap: 1rem; }
+        }
+
+        .cert-card {
+            background: linear-gradient(145deg, rgba(20,20,20,0.9) 0%, rgba(10,10,10,0.95) 100%);
+            border: 1px solid rgba(255,255,255,0.07);
+            border-radius: 0.875rem;
+            padding: 1rem;
+            transition: all 0.25s ease;
+            display: flex;
+            flex-direction: column;
+            gap: 0.35rem;
+        }
+        .cert-card:hover {
+            border-color: rgba(212,175,55,0.25);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px -8px rgba(212,175,55,0.12);
+        }
+        .cert-card-title {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #fff;
+            line-height: 1.35;
+        }
+        .cert-card-date {
+            font-size: 0.68rem;
+            color: rgba(255,255,255,0.35);
+            font-weight: 500;
+        }
+        .cert-card-link {
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: #D4AF37;
+            text-decoration: none;
+            margin-top: auto;
+            padding-top: 0.4rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            transition: color 0.2s ease;
+        }
+        .cert-card-link:hover { color: #F2D06B; }
+        .cert-card-link-disabled {
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: rgba(255,255,255,0.2);
+            margin-top: auto;
+            padding-top: 0.4rem;
+            cursor: default;
+        }
+
         .icon-svg { display: inline-flex; align-items: center; justify-content: center; }
     </style>
 </head>
@@ -347,25 +389,21 @@
 
     <!-- FLOATING SOCIAL SIDEBAR (Desktop Only) -->
     <div class="floating-social">
-        <!-- LinkedIn -->
         <a href="https://linkedin.com/in/saleh-hossam/" target="_blank" class="social-icon linkedin" title="LinkedIn">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
             </svg>
         </a>
-        <!-- GitHub -->
         <a href="https://github.com/Saleh-Hossam" target="_blank" class="social-icon github" title="GitHub">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
             </svg>
         </a>
-        <!-- WhatsApp -->
         <a href="https://wa.me/201034207458" target="_blank" class="social-icon whatsapp" title="WhatsApp">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
             </svg>
         </a>
-        <!-- Email -->
         <a href="mailto:salehhossam611@gmail.com" class="social-icon email" title="Email">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
@@ -398,7 +436,6 @@
                 <div class="absolute -inset-1 bg-gradient-to-r from-gold to-slate-500 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
                 <img src="assets/img/profile.jpg" alt="Saleh Hossam" class="relative w-32 h-32 md:w-48 md:h-48 rounded-full object-cover border-2 border-white/10 shadow-2xl" onerror="this.src='https://ui-avatars.com/api/?name=Saleh+Hossam&background=D4AF37&color=000'">
             </div>
-            
             <div class="text-center md:text-left flex-1">
                 <div class="inline-block px-3 py-1 mb-4 border border-gold/30 rounded-full bg-gold/5 backdrop-blur-sm">
                     <span class="text-gold text-xs font-bold tracking-widest uppercase flex items-center gap-2">
@@ -406,19 +443,13 @@
                         Available for work • Cairo, Egypt
                     </span>
                 </div>
-                
                 <h1 class="text-4xl md:text-6xl font-black tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-gold-light to-white mb-4">
                     Saleh Hossam
                 </h1>
-
                 <p class="text-xl md:text-2xl text-white/80 font-light mb-6">
                     Data Analyst turning complex datasets into <span class="text-gold font-semibold">actionable insights</span>.
                 </p>
-                
-                <p class="text-sm text-white/60 mb-6">
-                    Open to data analyst roles and freelance projects
-                </p>
-                
+                <p class="text-sm text-white/60 mb-6">Open to data analyst roles and freelance projects</p>
                 <div class="flex flex-wrap justify-center md:justify-start gap-4">
                     <a href="https://github.com/Saleh-Hossam/Saleh-Hossam.github.io/raw/master/assets/Saleh%20Hossam.pdf" class="btn-gold rounded-lg px-6 py-3 font-bold text-gold flex items-center gap-2">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
@@ -444,7 +475,6 @@
                 <p class="text-gray-300 leading-relaxed mb-4">
                     Coming from an accounting background, I bring a unique perspective to data analysis—I understand the business context behind the numbers. Through my personal projects, I've experienced those breakthrough moments, like when I discovered that a small 5% inventory loss was actually costing <strong class="impact-number">32,000+ units</strong>, or when I found <strong class="impact-number">$202K</strong> in untapped revenue potential.
                 </p>
-                
                 <div class="bg-gold/5 border border-gold/20 rounded-xl p-4 mb-4">
                     <div class="flex items-start gap-3">
                         <div class="p-2 bg-gold/10 rounded-lg shrink-0">
@@ -460,14 +490,13 @@
                         </div>
                     </div>
                 </div>
-                
                 <p class="text-white/60 italic text-sm border-l-2 border-gold pl-4">
                     Currently learning: Advanced DAX patterns, SQL optimization techniques, and storytelling with data visualization.
                 </p>
             </div>
         </div>
 
-        <!-- SKILLS — updated to 4 cards: Power BI, SQL Server, MySQL, Excel -->
+        <!-- SKILLS -->
         <div id="skills" class="mb-24 scroll-mt-28 fade-in">
             <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
@@ -485,11 +514,9 @@
                     <h3 class="font-bold text-base md:text-lg mb-1">Power BI</h3>
                     <p class="text-[10px] md:text-xs text-gray-400">DAX, Modeling</p>
                 </div>
-
                 <!-- SQL Server -->
                 <div class="project-card p-4 md:p-6 rounded-2xl flex flex-col items-center text-center group">
                     <div class="w-12 h-12 md:w-16 md:h-16 mb-4 p-2 bg-white/5 rounded-xl group-hover:bg-white/10 transition-colors flex items-center justify-center">
-                        <!-- SQL Server logo colors: red/white -->
                         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
                             <ellipse cx="12" cy="5" rx="9" ry="3" fill="#CC2927" opacity="0.9"/>
                             <path d="M3 5v4.5C3 11 7 12.5 12 12.5S21 11 21 9.5V5" stroke="#CC2927" stroke-width="1.2" fill="none"/>
@@ -500,24 +527,20 @@
                     <h3 class="font-bold text-base md:text-lg mb-1">SQL Server</h3>
                     <p class="text-[10px] md:text-xs text-gray-400">CTEs, Window Functions</p>
                 </div>
-
                 <!-- MySQL -->
                 <div class="project-card p-4 md:p-6 rounded-2xl flex flex-col items-center text-center group">
                     <div class="w-12 h-12 md:w-16 md:h-16 mb-4 p-2 bg-white/5 rounded-xl group-hover:bg-white/10 transition-colors flex items-center justify-center">
-                        <!-- MySQL logo colors: blue/orange -->
                         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
                             <ellipse cx="12" cy="5" rx="9" ry="3" fill="#00758F" opacity="0.9"/>
                             <path d="M3 5v4.5C3 11 7 12.5 12 12.5S21 11 21 9.5V5" stroke="#00758F" stroke-width="1.2" fill="none"/>
                             <path d="M3 9.5V14C3 15.66 7 17 12 17s9-1.34 9-3v-4.5" stroke="#00758F" stroke-width="1.2" fill="none"/>
                             <path d="M3 14v4.5C3 20.16 7 21.5 12 21.5s9-1.34 9-3V14" stroke="#00758F" stroke-width="1.2" fill="none"/>
-                            <!-- MySQL dolphin fin hint -->
                             <path d="M17 2.5 Q20 1 21 4" stroke="#F29111" stroke-width="1.5" fill="none" stroke-linecap="round"/>
                         </svg>
                     </div>
                     <h3 class="font-bold text-base md:text-lg mb-1">MySQL</h3>
                     <p class="text-[10px] md:text-xs text-gray-400">Queries, Joins, Aggregations</p>
                 </div>
-
                 <!-- Excel -->
                 <div class="project-card p-4 md:p-6 rounded-2xl flex flex-col items-center text-center group">
                     <div class="w-12 h-12 md:w-16 md:h-16 mb-4 p-2 bg-white/5 rounded-xl group-hover:bg-white/10 transition-colors">
@@ -539,7 +562,7 @@
                 <p class="text-gray-400">Real-world business problems solved with data.</p>
             </div>
 
-            <!-- PROJECT 1: OLIST (NEW — FIRST) -->
+            <!-- PROJECT 1: OLIST -->
             <div class="project-card rounded-2xl p-5 md:p-8 fade-in">
                 <div class="flex flex-col lg:flex-row gap-8">
                     <div class="order-2 lg:order-1 flex-1">
@@ -677,75 +700,143 @@
             </div>
         </div>
 
-        <!-- CERTS -->
+        <!-- ══════════════════════════════════════════
+             CERTIFICATIONS — Grouped by Issuer
+             ══════════════════════════════════════════ -->
         <div id="certs" class="mb-24 scroll-mt-28 fade-in">
             <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
                 Professional Certifications
             </h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div class="project-card p-4 rounded-xl">
-                    <div class="flex items-center gap-3 mb-3">
-                        <div class="p-2 bg-white/5 rounded-lg border border-white/10 shrink-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
-                        </div>
-                        <h3 class="font-bold text-white text-sm">Power Pivot Fundamentals</h3>
-                    </div>
-                    <p class="text-gray-400 text-xs mb-2">Corporate Finance Institute</p>
-                    <p class="text-gray-500 text-xs mb-3">Jan 2026</p>
-                    <a href="https://www.coursera.org/account/accomplishments/verify/QXNA559ST2EE" target="_blank" class="inline-block text-gold text-xs font-bold hover:underline">Show Credential →</a>
-                </div>
 
-                <div class="project-card p-4 rounded-xl">
-                    <div class="flex items-center gap-3 mb-3">
-                        <div class="p-2 bg-white/5 rounded-lg border border-white/10 shrink-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
-                        </div>
-                        <h3 class="font-bold text-white text-sm">Power Query Fundamentals</h3>
-                    </div>
-                    <p class="text-gray-400 text-xs mb-2">Corporate Finance Institute</p>
-                    <p class="text-gray-500 text-xs mb-3">Jan 2026</p>
-                    <a href="https://www.coursera.org/account/accomplishments/verify/HDSYVJWK68H6" target="_blank" class="inline-block text-gold text-xs font-bold hover:underline">Show Credential →</a>
+            <!-- ── CFI Block ── -->
+            <div class="cert-issuer-block">
+                <div class="cert-issuer-header issuer-cfi">
+                    <div class="cert-issuer-dot"></div>
+                    <span class="cert-issuer-name">Corporate Finance Institute</span>
+                    <span class="cert-issuer-count">7 certs</span>
                 </div>
+                <div class="cert-grid">
 
-                <div class="project-card p-4 rounded-xl">
-                    <div class="flex items-center gap-3 mb-3">
-                        <div class="p-2 bg-white/5 rounded-lg border border-white/10 shrink-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
-                        </div>
-                        <h3 class="font-bold text-white text-sm">Introduction to Databases</h3>
+                    <div class="cert-card">
+                        <p class="cert-card-title">Financial Statements in Power BI</p>
+                        <p class="cert-card-date">Mar 2026 · ID: QGD8T11L6X9R</p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/QGD8T11L6X9R" target="_blank" class="cert-card-link">
+                            Show Credential
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
                     </div>
-                    <p class="text-gray-400 text-xs mb-2">Meta</p>
-                    <p class="text-gray-500 text-xs mb-3">Jan 2026</p>
-                    <a href="https://www.coursera.org/account/accomplishments/verify/NWAC9GHU59HU" target="_blank" class="inline-block text-gold text-xs font-bold hover:underline">Show Credential →</a>
-                </div>
 
-                <div class="project-card p-4 rounded-xl">
-                    <div class="flex items-center gap-3 mb-3">
-                        <div class="p-2 bg-white/5 rounded-lg border border-white/10 shrink-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
-                        </div>
-                        <h3 class="font-bold text-white text-sm">Data Analysis in Excel</h3>
+                    <div class="cert-card">
+                        <p class="cert-card-title">Intermediate DAX &amp; Time Intelligence</p>
+                        <p class="cert-card-date">Mar 2026 · ID: CLAN5DZR56T9</p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/CLAN5DZR56T9" target="_blank" class="cert-card-link">
+                            Show Credential
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
                     </div>
-                    <p class="text-gray-400 text-xs mb-2">Corporate Finance Institute</p>
-                    <p class="text-gray-500 text-xs mb-3">Dec 2025</p>
-                    <a href="https://www.coursera.org/account/accomplishments/verify/RVWL2Z49MBTL" target="_blank" class="inline-block text-gold text-xs font-bold hover:underline">Show Credential →</a>
-                </div>
 
-                <div class="project-card p-4 rounded-xl">
-                    <div class="flex items-center gap-3 mb-3">
-                        <div class="p-2 bg-white/5 rounded-lg border border-white/10 shrink-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
-                        </div>
-                        <h3 class="font-bold text-white text-sm">Statistical Distributions</h3>
+                    <div class="cert-card">
+                        <p class="cert-card-title">Power BI Fundamentals</p>
+                        <p class="cert-card-date">Feb 2026 · ID: YO61Y43XGNIT</p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/YO61Y43XGNIT" target="_blank" class="cert-card-link">
+                            Show Credential
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
                     </div>
-                    <p class="text-gray-400 text-xs mb-2">Rice University</p>
-                    <p class="text-gray-500 text-xs mb-3">Dec 2025</p>
-                    <a href="https://www.coursera.org/account/accomplishments/verify/J779XYZWERFM" target="_blank" class="inline-block text-gold text-xs font-bold hover:underline">Show Credential →</a>
+
+                    <div class="cert-card">
+                        <p class="cert-card-title">Power Pivot Fundamentals</p>
+                        <p class="cert-card-date">Jan 2026</p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/QXNA559ST2EE" target="_blank" class="cert-card-link">
+                            Show Credential
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                    </div>
+
+                    <div class="cert-card">
+                        <p class="cert-card-title">Power Query Fundamentals</p>
+                        <p class="cert-card-date">Jan 2026</p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/HDSYVJWK68H6" target="_blank" class="cert-card-link">
+                            Show Credential
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                    </div>
+
+                    <div class="cert-card">
+                        <p class="cert-card-title">Data Analysis in Excel</p>
+                        <p class="cert-card-date">Dec 2025</p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/RVWL2Z49MBTL" target="_blank" class="cert-card-link">
+                            Show Credential
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                    </div>
+
                 </div>
             </div>
+
+            <!-- ── HackerRank Block ── -->
+            <div class="cert-issuer-block">
+                <div class="cert-issuer-header issuer-hackerrank">
+                    <div class="cert-issuer-dot"></div>
+                    <span class="cert-issuer-name">HackerRank</span>
+                    <span class="cert-issuer-count">2 certs</span>
+                </div>
+                <div class="cert-grid-2col">
+
+                    <div class="cert-card">
+                        <p class="cert-card-title">SQL (Advanced) Certificate</p>
+                        <p class="cert-card-date">Feb 2026 · ID: f93fc4570881</p>
+                        <a href="https://www.hackerrank.com/certificates/f93fc4570881" target="_blank" class="cert-card-link">
+                            Show Credential
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                    </div>
+
+                    <div class="cert-card">
+                        <p class="cert-card-title">SQL (Intermediate) Certificate</p>
+                        <p class="cert-card-date">Feb 2026 · ID: 873396bf4552</p>
+                        <a href="https://www.hackerrank.com/certificates/873396bf4552" target="_blank" class="cert-card-link">
+                            Show Credential
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ── Others Block ── -->
+            <div class="cert-issuer-block" style="margin-bottom: 0;">
+                <div class="cert-issuer-header issuer-other">
+                    <div class="cert-issuer-dot"></div>
+                    <span class="cert-issuer-name">Other Institutions</span>
+                    <span class="cert-issuer-count">2 certs</span>
+                </div>
+                <div class="cert-grid-2col">
+
+                    <div class="cert-card">
+                        <p class="cert-card-title">Introduction to Databases</p>
+                        <p class="cert-card-date">Jan 2026 · Meta via Coursera</p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/NWAC9GHU59HU" target="_blank" class="cert-card-link">
+                            Show Credential
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                    </div>
+
+                    <div class="cert-card">
+                        <p class="cert-card-title">Statistical Distributions</p>
+                        <p class="cert-card-date">Dec 2025 · Rice University via Coursera</p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/J779XYZWERFM" target="_blank" class="cert-card-link">
+                            Show Credential
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
+        <!-- end #certs -->
 
     </main>
 
@@ -755,9 +846,7 @@
             <h3 class="text-3xl md:text-4xl font-bold text-white mb-4">Let's Connect</h3>
             <p class="text-gray-400 text-lg mb-4">Open to data analyst roles and freelance projects</p>
             <p class="text-gray-500 text-sm mb-12">Best way to reach me: WhatsApp or Email for quick response</p>
-            
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
-                <!-- LinkedIn -->
                 <div class="flex flex-col items-center">
                     <a href="https://linkedin.com/in/saleh-hossam/" target="_blank" class="contact-icon-large linkedin">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -766,8 +855,6 @@
                     </a>
                     <p class="contact-label">LinkedIn</p>
                 </div>
-
-                <!-- GitHub -->
                 <div class="flex flex-col items-center">
                     <a href="https://github.com/Saleh-Hossam" target="_blank" class="contact-icon-large github">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -776,8 +863,6 @@
                     </a>
                     <p class="contact-label">GitHub</p>
                 </div>
-
-                <!-- WhatsApp -->
                 <div class="flex flex-col items-center">
                     <a href="https://wa.me/201034207458" target="_blank" class="contact-icon-large whatsapp">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -786,8 +871,6 @@
                     </a>
                     <p class="contact-label">WhatsApp</p>
                 </div>
-
-                <!-- Email -->
                 <div class="flex flex-col items-center">
                     <a href="mailto:salehhossam611@gmail.com" class="contact-icon-large email">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -798,20 +881,16 @@
                     <p class="contact-label">Email</p>
                 </div>
             </div>
-
             <p class="text-gray-600 text-sm">© 2026 Saleh Hossam. Built for impact.</p>
         </div>
     </footer>
 
     <script>
-        // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
+                if (target) { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
             });
         });
     </script>
