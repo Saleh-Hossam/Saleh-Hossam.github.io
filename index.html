@@ -145,7 +145,7 @@
         }
         @media (min-width: 768px) {
             .skill-grid {
-                grid-template-columns: repeat(4, 1fr);
+                grid-template-columns: repeat(5, 1fr);
                 gap: 2rem;
             }
         }
@@ -552,6 +552,17 @@
                     <h3 class="font-bold text-base md:text-lg mb-1">Excel</h3>
                     <p class="text-[10px] md:text-xs text-gray-400">Power Query, Power Pivot</p>
                 </div>
+                <!-- Python -->
+                <div class="project-card p-4 md:p-6 rounded-2xl flex flex-col items-center text-center group">
+                    <div class="w-12 h-12 md:w-16 md:h-16 mb-4 p-2 bg-white/5 rounded-xl group-hover:bg-white/10 transition-colors flex items-center justify-center">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+                            <path fill="#3776AB" d="M11.914 0C5.82 0 6.2 2.656 6.2 2.656l.007 2.752h5.814v.826H3.912S0 5.789 0 11.969c0 6.18 3.403 5.96 3.403 5.96h2.031v-2.867s-.109-3.403 3.345-3.403h5.762s3.236.052 3.236-3.127V3.259S18.28 0 11.914 0zm-3.2 1.848a1.047 1.047 0 1 1 0 2.095 1.047 1.047 0 0 1 0-2.095z"/>
+                            <path fill="#FFC331" d="M12.086 24c6.094 0 5.714-2.656 5.714-2.656l-.007-2.752h-5.814v-.826h8.109S24 18.211 24 12.031c0-6.18-3.403-5.96-3.403-5.96h-2.031v2.867s.109 3.403-3.345 3.403H9.459s-3.236-.052-3.236 3.127v5.233S5.72 24 12.086 24zm3.2-1.848a1.047 1.047 0 1 1 0-2.095 1.047 1.047 0 0 1 0 2.095z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-base md:text-lg mb-1">Python</h3>
+                    <p class="text-[10px] md:text-xs text-gray-400">Pandas, NumPy, Matplotlib</p>
+                </div>
             </div>
         </div>
 
@@ -560,6 +571,33 @@
             <div class="mb-8 fade-in">
                 <h2 class="text-3xl md:text-4xl font-black text-white mb-2">Selected Work</h2>
                 <p class="text-gray-400">Real-world business problems solved with data.</p>
+            </div>
+
+            <!-- PROJECT 0: OPERATION SWIFT RECOVERY -->
+            <div class="project-card rounded-2xl p-5 md:p-8 fade-in">
+                <div class="flex flex-col lg:flex-row gap-8">
+                    <div class="order-2 lg:order-1 flex-1">
+                        <div class="flex gap-2 mb-4 flex-wrap">
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-300 border border-blue-500/30 text-xs font-bold rounded uppercase">Python</span>
+                            <span class="px-3 py-1 bg-orange-500/20 text-orange-300 border border-orange-500/30 text-xs font-bold rounded uppercase">MySQL</span>
+                            <span class="px-3 py-1 bg-green-500/20 text-green-300 border border-green-500/30 text-xs font-bold rounded uppercase">Pandas</span>
+                            <span class="px-3 py-1 bg-red-500/20 text-red-300 border border-red-500/30 text-xs font-bold rounded uppercase">Cybersecurity</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Operation Swift Recovery</h3>
+                        <p class="text-gray-300 mb-6 leading-relaxed text-sm md:text-base">
+                            Forensic analysis of a multi-vector cyber attack on GlobalTrust Bank — <span class="impact-number">15,500 attack events</span>, 550 IPs, 13 countries, <span class="impact-number">$890K</span> in damage. Proved the attack was coordinated (all 5 vectors launched within 27.8 seconds), identified SQL Injection as <span class="impact-number">19× more dangerous</span> than DDoS by weighted danger score, and delivered a <span class="impact-number">$575K</span> investment plan that cuts repeat-attack risk from 40% to under 10%.
+                        </p>
+                        <a href="https://github.com/Saleh-Hossam/operation-swift-recovery" target="_blank" class="btn-case-study">
+                            <span>View Full Case Study</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                    </div>
+                    <div class="order-1 lg:order-2 flex-1">
+                        <div class="rounded-xl overflow-hidden border border-white/10">
+                            <img src="https://github.com/Saleh-Hossam/operation-swift-recovery/blob/main/images/Operation_Swift_Recovery_stats.png?raw=true" alt="Operation Swift Recovery" class="w-full h-auto">
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- PROJECT 1: HR ANALYTICS -->
@@ -726,16 +764,14 @@
             </div>
         </div>
 
-        <!-- ══════════════════════════════════════════
-             CERTIFICATIONS — Grouped by Issuer
-             ══════════════════════════════════════════ -->
+        <!-- CERTIFICATIONS -->
         <div id="certs" class="mb-24 scroll-mt-28 fade-in">
             <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
                 Professional Certifications
             </h2>
 
-            <!-- ── CFI Block ── -->
+            <!-- CFI Block -->
             <div class="cert-issuer-block">
                 <div class="cert-issuer-header issuer-cfi">
                     <div class="cert-issuer-dot"></div>
@@ -743,7 +779,6 @@
                     <span class="cert-issuer-count">7 certs</span>
                 </div>
                 <div class="cert-grid">
-
                     <div class="cert-card">
                         <p class="cert-card-title">Financial Statements in Power BI</p>
                         <p class="cert-card-date">Mar 2026 · ID: QGD8T11L6X9R</p>
@@ -752,7 +787,6 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                         </a>
                     </div>
-
                     <div class="cert-card">
                         <p class="cert-card-title">Intermediate DAX &amp; Time Intelligence</p>
                         <p class="cert-card-date">Mar 2026 · ID: CLAN5DZR56T9</p>
@@ -761,7 +795,6 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                         </a>
                     </div>
-
                     <div class="cert-card">
                         <p class="cert-card-title">Power BI Fundamentals</p>
                         <p class="cert-card-date">Feb 2026 · ID: YO61Y43XGNIT</p>
@@ -770,7 +803,6 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                         </a>
                     </div>
-
                     <div class="cert-card">
                         <p class="cert-card-title">Power Pivot Fundamentals</p>
                         <p class="cert-card-date">Jan 2026</p>
@@ -779,7 +811,6 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                         </a>
                     </div>
-
                     <div class="cert-card">
                         <p class="cert-card-title">Power Query Fundamentals</p>
                         <p class="cert-card-date">Jan 2026</p>
@@ -788,7 +819,6 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                         </a>
                     </div>
-
                     <div class="cert-card">
                         <p class="cert-card-title">Data Analysis in Excel</p>
                         <p class="cert-card-date">Dec 2025</p>
@@ -797,11 +827,10 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                         </a>
                     </div>
-
                 </div>
             </div>
 
-            <!-- ── HackerRank Block ── -->
+            <!-- HackerRank Block -->
             <div class="cert-issuer-block">
                 <div class="cert-issuer-header issuer-hackerrank">
                     <div class="cert-issuer-dot"></div>
@@ -809,7 +838,6 @@
                     <span class="cert-issuer-count">2 certs</span>
                 </div>
                 <div class="cert-grid-2col">
-
                     <div class="cert-card">
                         <p class="cert-card-title">SQL (Advanced) Certificate</p>
                         <p class="cert-card-date">Feb 2026 · ID: f93fc4570881</p>
@@ -818,7 +846,6 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                         </a>
                     </div>
-
                     <div class="cert-card">
                         <p class="cert-card-title">SQL (Intermediate) Certificate</p>
                         <p class="cert-card-date">Feb 2026 · ID: 873396bf4552</p>
@@ -827,19 +854,38 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                         </a>
                     </div>
-
                 </div>
             </div>
 
-            <!-- ── Others Block ── -->
+            <!-- Others Block -->
             <div class="cert-issuer-block" style="margin-bottom: 0;">
                 <div class="cert-issuer-header issuer-other">
                     <div class="cert-issuer-dot"></div>
                     <span class="cert-issuer-name">Other Institutions</span>
-                    <span class="cert-issuer-count">2 certs</span>
+                    <span class="cert-issuer-count">5 certs</span>
                 </div>
-                <div class="cert-grid-2col">
-
+                <div class="cert-grid">
+                    <div class="cert-card">
+                        <p class="cert-card-title">NumPy &amp; Pandas: Analyze &amp; Transform Data</p>
+                        <p class="cert-card-date">May 2026 · EDUCBA · ID: K2F75JDZM4EE</p>
+                        <span class="cert-card-link-disabled">Credential on file</span>
+                    </div>
+                    <div class="cert-card">
+                        <p class="cert-card-title">Programming for Everybody (Getting Started with Python)</p>
+                        <p class="cert-card-date">Apr 2026 · University of Michigan via Coursera · ID: 03VQ6JH00SBQ</p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/03VQ6JH00SBQ" target="_blank" class="cert-card-link">
+                            Show Credential
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                    </div>
+                    <div class="cert-card">
+                        <p class="cert-card-title">Analyze Markets: Strategy with SWOT</p>
+                        <p class="cert-card-date">Apr 2026 · Coursera · ID: 1I9VHLZ9MJ20</p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/1I9VHLZ9MJ20" target="_blank" class="cert-card-link">
+                            Show Credential
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                    </div>
                     <div class="cert-card">
                         <p class="cert-card-title">Introduction to Databases</p>
                         <p class="cert-card-date">Jan 2026 · Meta via Coursera</p>
@@ -848,7 +894,6 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                         </a>
                     </div>
-
                     <div class="cert-card">
                         <p class="cert-card-title">Statistical Distributions</p>
                         <p class="cert-card-date">Dec 2025 · Rice University via Coursera</p>
@@ -857,12 +902,10 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                         </a>
                     </div>
-
                 </div>
             </div>
 
         </div>
-        <!-- end #certs -->
 
     </main>
 
